@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+    <default version="1.0">
+        <manufacturerName> Atmel New </manufacturerName>
+        <maxBitrate> 400 </maxBitrate>
+        <writeTime> 6000 </writeTime>
+        <baseDeviceAddress> 0x50 </baseDeviceAddress>
+        <deviceAlgorithm> I2C EEPROM </deviceAlgorithm>
+    </default>
+
+    <device version="1.0">
+        <deviceName> AT24CM02 </deviceName>
+        <deviceDescription>
+            Atmel AT24CM02 256 Kilobyte I2C EEPROM
+        </deviceDescription>
+        <maxBitrate> 1000 </maxBitrate>
+        <capacity> 256*1024 </capacity>
+        <addressWidth> 2 </addressWidth>
+        <writeSize> 0x100 </writeSize>
+    </device>
+
+</devices>

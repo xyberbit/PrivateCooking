@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+    <default version="1.0">
+        <manufacturerName> Winbond / NexFlash New </manufacturerName>
+        <deviceAlgorithm>SPI flash</deviceAlgorithm>
+        <addressWidth>3</addressWidth>
+        <readDummyBytes>1</readDummyBytes>
+        <writeSize>256</writeSize>
+        <hasEraseAll>true</hasEraseAll>
+        <readInstruction>0x0b</readInstruction>
+        <eraseInstruction>0xd8</eraseInstruction>
+        <eraseAllInstruction>0xc7</eraseAllInstruction>
+    </default>
+
+    <device version="1.0">
+        <deviceName>W25Q512JV</deviceName>
+        <deviceDescription>
+            Winbond W25Q512JV 64 Megabyte SPI Flash
+        </deviceDescription>
+        <capacity>64*1024*1024</capacity>
+        <expectedDeviceId>\xef\x40\x20</expectedDeviceId>
+        <eraseAllTime>240000000</eraseAllTime>
+        <addressWidth>4</addressWidth>
+        <extendedAddressingEnableInstruction>0xB7</extendedAddressingEnableInstruction>
+        <maxBitrate>40*1000</maxBitrate>
+        <writeTime>500</writeTime>
+        <writeStatusRegisterTime>1300</writeStatusRegisterTime>
+        <blockProtectBits>0x3c</blockProtectBits>
+        <readDeviceIdInstruction>0x9f</readDeviceIdInstruction>
+        <eraseSize>64*1024</eraseSize>
+        <eraseTime>700000</eraseTime>
+        <writeInstruction>0x02</writeInstruction>
+        <writeEnableInstruction>0x06</writeEnableInstruction>
+        <writeDisableInstruction>0x04</writeDisableInstruction>
+        <writeStatusRegisterInstruction>0x01</writeStatusRegisterInstruction>
+        <readStatusRegisterInstruction>0x05</readStatusRegisterInstruction>
+        <deviceBusyBit>0x01</deviceBusyBit>
+        <busyBitPolarity>false</busyBitPolarity>
+        <writeEnableBits>0x02</writeEnableBits>
+    </device>
+</devices>
