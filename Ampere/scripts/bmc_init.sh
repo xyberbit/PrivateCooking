@@ -4,6 +4,8 @@ alias ll="ls -l"
 alias i=ipmi
 alias g=gpio
 alias p=prog
+USER=admin
+PASS=admin
 
 #
 # ipmitool
@@ -22,7 +24,7 @@ ipmi() {
   echo $1 | grep -iq cm && opt="clear-cmos=yes"
   echo "$cmd" | grep -q bootdev && cmd="$cmd $opt"
   [ -z "$cmd" ] && cmd="$@"
-  ipmitool -H 127.0.0.1 -U admin -P admin $cmd
+  ipmitool -H 127.0.0.1 -U $USER -P $PASS $cmd
 }
 
 #
