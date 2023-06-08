@@ -1,0 +1,47 @@
+NOT FINISHED YET
+
+NETBOOT
+
+  Grub2 which supports netboot is loaded from UEFI shell or is run as PXE NBP.
+  Arm64: http://ports.ubuntu.com/ubuntu-ports/dists/focal/main/uefi/grub2-arm64/current/grubnetaa64.efi.signed
+
+UBIQUITY INSTALL FROM LIVECD - https://ubuntu.com/server/docs/install/netboot-arm64
+
+  p = <protocol> = http|tftp
+  s = <server address>
+  i = <server path of iso>
+  d = <iso directory of kernel and ramdisk>
+  m = <server path of mounted iso>
+
+  ISO LOOPBACK
+
+  loopback loop ($p,$s)/$i
+  linux  (loop)/$d/<kernel> <options>
+  initrd (loop)/$d/<ramdisk>
+  boot
+
+  ISO MOUNT
+
+  linux  ($p,$s)/$m/$d/<kernel> <options>
+  initrd ($p,$s)/$m/$d/<ramdisk>
+
+BOOT FROM LIVECD
+
+
+UBUNTU SERVER
+
+  kernel  = vmlinuz
+  ramdisk = initrd
+  options = url=$p://$s/$i only-ubiquity ip=dhcp [text] ---
+
+  Run from LiveCD
+
+ANACONDA INSTALL FROM ISO
+
+
+
+FEDORA SERVER 
+
+kernel  = vmlinuz
+ramdisk = initrd.img
+options = inst.repo=nfs:$s:/$i [inst.vnc|text]
