@@ -1,47 +1,64 @@
-NOT FINISHED YET
-
 NETBOOT
 
   Grub2 which supports netboot is loaded from UEFI shell or is run as PXE NBP.
   Arm64: http://ports.ubuntu.com/ubuntu-ports/dists/focal/main/uefi/grub2-arm64/current/grubnetaa64.efi.signed
 
-UBIQUITY INSTALL FROM LIVECD - https://ubuntu.com/server/docs/install/netboot-arm64
+REQUIREMENT
 
-  p = <protocol> = http|tftp
+  p = <protocol>
   s = <server address>
   i = <server path of iso>
   d = <iso directory of kernel and ramdisk>
   m = <server path of mounted iso>
 
-  ISO LOOPBACK
+ISO LOOPBACK
 
   loopback loop ($p,$s)/$i
   linux  (loop)/$d/<kernel> <options>
   initrd (loop)/$d/<ramdisk>
   boot
 
-  ISO MOUNT
+ISO MOUNT
 
   linux  ($p,$s)/$m/$d/<kernel> <options>
   initrd ($p,$s)/$m/$d/<ramdisk>
 
-BOOT FROM LIVECD
+UBIQUITY INSTALLER
 
+  https://ubuntu.com/server/docs/install/netboot-arm64
 
-UBUNTU SERVER
+UBUNTU
 
   kernel  = vmlinuz
   ramdisk = initrd
   options = url=$p://$s/$i only-ubiquity ip=dhcp [text] ---
 
-  Run from LiveCD
+UBUNTU INSTALLATION EXAMPLE
 
-ANACONDA INSTALL FROM ISO
+  p=http
+  s=172.16.1.44
+  i=share/iso
+  d=casper
+  m=cd2
+  loopback loop ($p,$s)/$i
+  linux  (loop)/$d/vmlinuz url=$p://$s/$i only-ubiquity ip=dhcp [text] ---
+  initrd (loop)/$d/initrd
+  boot
+
+UBUNTU LIVECD EXAMPLE
+
+ANACONDA INSTALLER
+
+  URL??
+
+FEDORA
+
+  kernel  = vmlinuz
+  ramdisk = initrd.img
+  options = inst.repo=nfs:$s:/$i [inst.vnc|text]
+
+FEDORA INSTALLATION EXAMPLE
+
+FEDORA LIVECD EXAMPLE
 
 
-
-FEDORA SERVER 
-
-kernel  = vmlinuz
-ramdisk = initrd.img
-options = inst.repo=nfs:$s:/$i [inst.vnc|text]
