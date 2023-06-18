@@ -1,0 +1,42 @@
+
+SOURCE
+
+  https://kernel.org/
+
+DEPENDENCIES
+
+  build-essential ncurses-dev 
+
+CONDIGURATION
+
+  make oldconfig # cp /boot/config-$(uname -r) .config
+  make defaultconfig
+
+MAKE
+
+  make -j $(nproc)
+
+INSTALL
+
+  make install
+  make install 
+
+RAMDISK
+
+
+
+
+FEDORA
+
+  https://docs.fedoraproject.org/en-US/quick-docs/kernel/build-custom-kernel/
+
+  SOURCE
+
+    fedpkg clone -a kernel
+
+  DEPENDENCIES
+
+    cd kernel
+    sudo dnf builddep kernel.spec
+    sudo dnf install qt3-devel libXi-devel gcc-c++ # make xconfig
+    sudo dnf install ncurses-devel # make menuconfig
