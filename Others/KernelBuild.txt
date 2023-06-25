@@ -5,7 +5,12 @@ SOURCE
 
 DEPENDENCIES
 
-  build-essential ncurses-dev 
+  Building
+  Configuring
+
+  build-essential
+  flex bison ncurses-dev# required by ubuntu???
+ drawves
 
 CONDIGURATION
 
@@ -23,7 +28,10 @@ INSTALL
 
 RAMDISK
 
+UBUNTU
 
+  apt source linux
+  sudo apt install linux-source
 
 
 FEDORA
