@@ -1,0 +1,13 @@
+diff --git a/Silicon/Ampere/AmpereAltraPkg/Drivers/PcieInitPei/PcieInitPei.c b/Silicon/Ampere/AmpereAltraPkg/Drivers/PcieInitPei/PcieInitPei.c
+index f86710189e..129d22c1c9 100644
+--- a/Silicon/Ampere/AmpereAltraPkg/Drivers/PcieInitPei/PcieInitPei.c
++++ b/Silicon/Ampere/AmpereAltraPkg/Drivers/PcieInitPei/PcieInitPei.c
+@@ -95,7 +95,7 @@ BuildRootComplexData (
+     RootComplex = &mRootComplexList[RCIndex];
+     RootComplex->Active = ConfigFound ? RootComplexConfig.RCStatus[RCIndex] : TRUE;
+     RootComplex->DevMapLow = ConfigFound ? RootComplexConfig.RCBifurcationLow[RCIndex] : 0;
+-    RootComplex->DevMapHigh = ConfigFound ? RootComplexConfig.RCBifurcationLow[RCIndex] : 0;
++    RootComplex->DevMapHigh = ConfigFound ? RootComplexConfig.RCBifurcationHigh[RCIndex] : 0;
+     RootComplex->Socket = RCIndex / AC01_PCIE_MAX_RCS_PER_SOCKET;
+     RootComplex->ID = RCIndex % AC01_PCIE_MAX_RCS_PER_SOCKET;
+     RootComplex->CsrBase = mCsrBase[RCIndex];
