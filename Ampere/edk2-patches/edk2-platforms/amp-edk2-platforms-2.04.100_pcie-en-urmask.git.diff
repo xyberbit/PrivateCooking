@@ -1,0 +1,48 @@
+diff --git a/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.c b/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.c
+index 1553bbf056..d1a5b3e4de 100644
+--- a/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.c
++++ b/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.c
+@@ -677,6 +677,12 @@ Ac01PcieCoreSetupRC (
+     // Hold link training
+     StartLinkTraining (RootComplex, PcieIndex, FALSE);
+ 
++    // Enable Unsupported Request (UR unmasked)
++    TargetAddress = CsrBase + AC01_PCIE_CORE_BUS_CTRL_REG;
++    Val = MmioRead32 (TargetAddress);
++    Val &= ~BUSCTL_CFG_UR_MASK;
++    MmioWrite32 (TargetAddress, Val);
++
+     if (!EnableAxiPipeClock (RootComplex, PcieIndex)) {
+       DEBUG ((DEBUG_ERROR, "- Pcie[%d] - PIPE clock is not stable\n", PcieIndex));
+       return RETURN_DEVICE_ERROR;
+@@ -1077,7 +1083,7 @@ Ac01PFACommand (
+   return Ret;
+ }
+ 
+-UINT32
++BOOLEAN
+ EndpointCfgReady (
+   IN AC01_ROOT_COMPLEX  *RootComplex,
+   IN UINT8              PcieIndex
+diff --git a/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.h b/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.h
+index 1db8a68b3d..6600fd6e7f 100644
+--- a/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.h
++++ b/Silicon/Ampere/AmpereAltraPkg/Library/Ac01PcieLib/PcieCore.h
+@@ -80,6 +80,7 @@
+ #define AC01_PCIE_CORE_IRQ_ENABLE_REG           0x30
+ #define AC01_PCIE_CORE_IRQ_EVENT_STAT_REG       0x38
+ #define AC01_PCIE_CORE_BLOCK_EVENT_STAT_REG     0x3C
++#define AC01_PCIE_CORE_BUS_CTRL_REG             0x40
+ #define AC01_PCIE_CORE_RESET_REG                0xC000
+ #define AC01_PCIE_CORE_CLOCK_REG                0xC004
+ #define AC01_PCIE_CORE_MEM_READY_REG            0xC104
+@@ -120,6 +121,9 @@
+ // AC01_PCIE_CORE_BLOCK_EVENT_STAT_REG
+ #define LINKUP_MASK              0x1
+ 
++// AC01_PCIE_CORE_BUS_CTRL_REG
++#define BUSCTL_CFG_UR_MASK       0x8
++
+ // AC01_PCIE_CORE_RESET_REG
+ #define DWC_PCIE_SET(dst, src)   (((dst) & ~0x1) | (((UINT32) (src)) & 0x1))
+ #define   RESET_MASK             0x1
