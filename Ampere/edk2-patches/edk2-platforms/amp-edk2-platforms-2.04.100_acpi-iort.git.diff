@@ -1,0 +1,29 @@
+diff --git a/Platform/Ampere/JadePkg/Drivers/AcpiPlatformDxe/AcpiIort.c b/Platform/Ampere/JadePkg/Drivers/AcpiPlatformDxe/AcpiIort.c
+index f4497d5c20..8cddb8ce36 100644
+--- a/Platform/Ampere/JadePkg/Drivers/AcpiPlatformDxe/AcpiIort.c
++++ b/Platform/Ampere/JadePkg/Drivers/AcpiPlatformDxe/AcpiIort.c
+@@ -114,7 +114,7 @@ AC01_RC_NODE mRcNodeTemplate = {
+     {
+       EFI_ACPI_IORT_TYPE_ROOT_COMPLEX,
+       sizeof (AC01_RC_NODE),
+-      0x1,
++      0x0,
+       0x0,
+       0x1,
+       OFFSET_OF (AC01_RC_NODE, RcIdMapping),
+@@ -136,13 +136,13 @@ AC01_SMMU_NODE mSmmuNodeTemplate = {
+     {
+       EFI_ACPI_IORT_TYPE_SMMUv3,
+       sizeof (AC01_SMMU_NODE),
+-      0x2,  // Revision
++      0x1,  // Revision
+       0x0,
+       0x2,  // Mapping Count
+       OFFSET_OF (AC01_SMMU_NODE, InterruptMsiMapping),
+     },
+     .Base = 0,
+-    EFI_ACPI_IORT_SMMUv3_FLAG_COHAC_OVERRIDE | EFI_ACPI_IORT_SMMUv3_FLAG_PROXIMITY_DOMAIN,
++    EFI_ACPI_IORT_SMMUv3_FLAG_COHAC_OVERRIDE,
+     0,
+     0,
+     0,
