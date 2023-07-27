@@ -1,0 +1,21 @@
+diff --git a/Silicon/Ampere/AmpereAltraPkg/Drivers/AcpiConfigDxe/AcpiConfigDxe.c b/Silicon/Ampere/AmpereAltraPkg/Drivers/AcpiConfigDxe/AcpiConfigDxe.c
+index 5366b5110d..6c4ce1ebb3 100644
+--- a/Silicon/Ampere/AmpereAltraPkg/Drivers/AcpiConfigDxe/AcpiConfigDxe.c
++++ b/Silicon/Ampere/AmpereAltraPkg/Drivers/AcpiConfigDxe/AcpiConfigDxe.c
+@@ -12,6 +12,7 @@
+ #include <Guid/AcpiConfigFormSet.h>
+ #include <Guid/MdeModuleHii.h>
+ #include <Guid/PlatformInfoHob.h>
++#include <Library/AmpereCpuLib.h>
+ #include <Library/AcpiHelperLib.h>
+ #include <Library/AcpiHelperLib.h>
+ #include <Library/BaseLib.h>
+@@ -399,7 +400,7 @@ UpdateTurboModeConfig (
+       }
+     }
+ 
+-    if (PlatformHob->TurboCapability[1] != 0) {
++    if (GetNumberOfActiveSockets () > 1 && PlatformHob->TurboCapability[1] != 0) {
+       Status = MailboxMsgTurboConfig (1, EnableTurbo);
+       if (EFI_ERROR (Status)) {
+         return Status;
