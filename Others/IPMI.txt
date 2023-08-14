@@ -1,0 +1,4 @@
+Improve SOL Experience
+  ipmitool sol set character-accumulate-level 10
+  ipmitool sol set character-send-threshold 32
+  ipmitool sol set retry-interval 10
