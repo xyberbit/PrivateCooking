@@ -1,0 +1,14 @@
+Recovery
+
+  When grub.cfg can't be loaded from efi partition, grub normal mode helps as long as the grub.cfg in root partition is accessible.
+
+  1. Locate the root partition.
+     grub> for i in (*,*)/boot/grub/grub.cfg; do echo $i; done
+     If multiple roots found, identify the root by its filenames and contents of files.
+     let's take (hd2,gpt2) as an example.
+
+  2. Configure grub and enter normal mode. (insmod is optional if normal module loaded)
+     grub> root=(hd2,gpt2)
+     grub> prefix=/boot/grub
+     grub> insmod normal
+     grub> normal
