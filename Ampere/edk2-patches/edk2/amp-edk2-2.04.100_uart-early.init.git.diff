@@ -1,0 +1,20 @@
+diff --git a/ArmPlatformPkg/PrePeiCore/PrePeiCore.c b/ArmPlatformPkg/PrePeiCore/PrePeiCore.c
+index 6dd9bcdea2..2b415cba7c 100644
+--- a/ArmPlatformPkg/PrePeiCore/PrePeiCore.c
++++ b/ArmPlatformPkg/PrePeiCore/PrePeiCore.c
+@@ -11,6 +11,7 @@
+ #include <Library/CacheMaintenanceLib.h>
+ #include <Library/DebugAgentLib.h>
+ #include <Library/ArmLib.h>
++#include <Library/SerialPortLib.h>
+ 
+ #include "PrePeiCore.h"
+ 
+@@ -74,6 +75,7 @@ CEntryPoint (
+   // Note: Doesn't have to Enable CPU interface in non-secure world,
+   // as Non-secure interface is already enabled in Secure world.
+   //
++  SerialPortInitialize ();
+ 
+   // Write VBAR - The Exception Vector table must be aligned to its requirement
+   // Note: The AArch64 Vector table must be 2k-byte aligned - if this assertion fails ensure
