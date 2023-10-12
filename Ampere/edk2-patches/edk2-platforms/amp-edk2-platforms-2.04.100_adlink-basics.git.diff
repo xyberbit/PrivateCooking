@@ -1487,7 +1487,7 @@ index 0d77a509a5..c6d08dad3b 100755
 +  # Ampere Altra UART2
 +  #
 +  gAmpereTokenSpaceGuid.PcdSerialExtraRegisterBase|0x100002620000|UINT64|0xA0000000
-+  gAmpereTokenSpaceGuid.PcdSerialExtraUartBaudRate|115200|UINT64|0xA0000001
++  gAmpereTokenSpaceGuid.PcdSerialExtraUartBaudRate|57600|UINT64|0xA0000001
 +
 +  #
 +  # PCF85x63 - RTC Type: 2=PcdPCF8563, 4=PcdPCF85063
