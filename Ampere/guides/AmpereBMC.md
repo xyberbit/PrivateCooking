@@ -1,7 +1,7 @@
-Firmware Update under MegaRAC<br/>
-  copy BMC image to /tmp<br/>
-  bmc_spi_update -p mtd0 -u <image><br/>
-<br/>
-Firmware Update under OpenBMC<br/>
-  copy image to /run/initramfs/image-bmc<br/>
-  reboot<br/>
+### Firmware Update under MegaRAC  
+&emsp;copy \<image\> to directory /tmp  
+&emsp;***bmc_spi_update -p mtd0 -u \<image\>***  
+
+### Firmware Update under OpenBMC  
+&emsp;copy \<image\> to file /run/initramfs/image-bmc  
+&emsp;***reboot***  
