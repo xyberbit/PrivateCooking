@@ -1,8 +1,6 @@
-NOX PLAYER
-===
+#### NOX PLAYER
 
-Settings
----
+##### Settings
 
 %USERPROFILE%\AppData\Local\Nox\*.ini
 
