@@ -1,4 +1,5 @@
-N O X &nbsp P L A Y E R
+NOX PLAYER
+===
 
 Recorded Macro Script Format (space for readibility, not existing)
 
