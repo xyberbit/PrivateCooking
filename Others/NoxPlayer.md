@@ -1,7 +1,17 @@
 NOX PLAYER
 ===
 
+Settings
+---
+
+%USERPROFILE%\AppData\Local\Nox\*.ini
+
+[setting]
+frames
+adb_port
+
 Recorded Macro Script Format (space for readibility, not existing)
+---
 
 ## ScRiPtSePaRaToR ACT ScRiPtSePaRaToR ##
 │                 │                   │
@@ -55,12 +65,6 @@ MULTI:0:6 and MSBRL:1337814:-1072938 - two lines for touch up, never experimente
 
 MULTI:1:2:xx:yy - used after touch down, this command swipes to xx,yy. Used repeatedly for short intervals, should be followed with touch up command for 'end of swipe'.
 
-%USERPROFILE%\AppData\Local\Nox\*.ini
-[setting]
-  astc=
-  rendering_cache=true|false
-  frames
-  adb_port
 
   
 
