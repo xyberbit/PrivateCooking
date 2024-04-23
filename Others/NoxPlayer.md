@@ -1,8 +1,8 @@
-N O X   P L A Y E R
+N O X &nbsp P L A Y E R
 
 Recorded Macro Script Format (space for readibility, not existing)
 
-# ScRiPtSePaRaToR ACT ScRiPtSePaRaToR #
+## ScRiPtSePaRaToR ACT ScRiPtSePaRaToR ##
 │                 │                   │
 │                 |                   └── action executed time in ms since the start of script
 │                 └────────────────────── action command
