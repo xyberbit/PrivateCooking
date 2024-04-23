@@ -1,70 +1,66 @@
-#### NOX PLAYER
+# NOX PLAYER
 
-##### Settings
+## SETTINGS
 
 %USERPROFILE%\AppData\Local\Nox\*.ini
 
 [setting]  
-frames  
-adb_port  
+frames=4
+adb_port=62032
 
-Recorded Macro Script (space for readibility, not existing)
----
-
-
-## ScRiPtSePaRaToR ACT ScRiPtSePaRaToR ##
+## Recorded Macro Script (unexisting space for readibility)
+```
+# ScRiPtSePaRaToR ACT ScRiPtSePaRaToR #
 │                 │                   │
-│                 |                   └── action executed time in ms since the start of script
+│                 |                   └── action executed time in milliseconds from the start of script
 │                 └────────────────────── action command
 └──────────────────────────────────────── action type determines the format of ACT
+```
 
+### ACTION TYPES
 
-0 ScRiPtSePaRaToR 480 | 800 | KBDPR:158:0 ScRiPtSePaRaToR 1055
+- 0 = Coordinated Actions
+- 1 = Character Input
+- 5 = End of Script
 
-ACTION TYPES
+### ACTION COMMANDS
 
-  0 Generic Actions
-  1 Character Input
+- **Character Input**
 
-ACTION COMMANDS
+	**1** ScRiPtSePaRaToR **CHR | 0** ScRiPtSePaRaToR **ms**
 
-  Character Input
+	CHR = typeable character
+	0 = end of action
 
-  1 ScRiPtSePaRaToR CHR | 0 ScRiPtSePaRaToR #
-  1ScRiPtSePaRaToRA|0ScRiPtSePaRaToR#
+- **Key Press/Release**
 
-    1ScRiPtSePaRaToR^|0ScRiPtSePaRaToR6849
-  1ScRiPtSePaRaToR&|0ScRiPtSePaRaToR7125
-  1ScRiPtSePaRaToR*|0ScRiPtSePaRaToR7438
-  1ScRiPtSePaRaToR(|0ScRiPtSePaRaToR7738
-  1ScRiPtSePaRaToR)|0ScRiPtSePaRaToR8029
+	**0** ScRiPtSePaRaToR **X-Res | Y-Res | KBDPR : KEY : 1** ScRiPtSePaRaToR **ms**
+	**0** ScRiPtSePaRaToR **X-Res | Y-Res | KBDRL : KEY : 0** ScRiPtSePaRaToR **ms**
 
-# a number, read descriptions
-ScRiPtSePaRaToR as its name "ScriptSeparator"
-| is the argument separator
-It's an end line when nothings between ScRiPtSePaRaToR's and the first # is total number of commands
+	X-Res | Y-Res = screen resolution
+	KEY = key code
+	1 = coming actions
+	0 = end of action
 
-ACTIONS:
+- **Mouse Button Press/Release**
 
-KBDPR:158:0 - press Back key
+- **Multiple Actions**
 
-KBDRL:158:0 - release Back
+	**0** ScRiPtSePaRaToR **MULTI X-Res | Y-Res | KBDPR : KEY : 1** ScRiPtSePaRaToR **ms**
 
-KBDPR:102:0 - same for Home
+- **End of Script**
 
-KBDRL:102:0
+	**5** ScRiPtSePaRaToR ScRiPtSePaRaToR **ms**
+ 
+KEY CODE
 
-KBDPR:221:0 - 'recent apps' button
+158 Android Back
+102 Android Home
+221 Android Task
 
-KBDRL:221:0
 
 MULTI:1:0:xx:yy - touch down at xx,yy coordinates
 
 MULTI:0:6 and MSBRL:1337814:-1072938 - two lines for touch up, never experimented if both are really needed, just copied from macro; numbers in MSBRL are always the same, they are not coordinates
 
 MULTI:1:2:xx:yy - used after touch down, this command swipes to xx,yy. Used repeatedly for short intervals, should be followed with touch up command for 'end of swipe'.
-
-
-  
-
-
