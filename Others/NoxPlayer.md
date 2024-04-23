@@ -6,12 +6,13 @@ Settings
 
 %USERPROFILE%\AppData\Local\Nox\*.ini
 
-[setting]</br>
-frames</br>
-adb_port
+[setting]  
+frames  
+adb_port  
 
-Recorded Macro Script Format (space for readibility, not existing)
+Recorded Macro Script (space for readibility, not existing)
 ---
+
 
 ## ScRiPtSePaRaToR ACT ScRiPtSePaRaToR ##
 │                 │                   │
