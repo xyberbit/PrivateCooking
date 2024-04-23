@@ -6,8 +6,8 @@ Settings
 
 %USERPROFILE%\AppData\Local\Nox\*.ini
 
-[setting]
-frames
+[setting]</br>
+frames</br>
 adb_port
 
 Recorded Macro Script Format (space for readibility, not existing)
