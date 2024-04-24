@@ -40,7 +40,7 @@ adb_port=62032
 	0 ScRiPtSePaRaToR x-res|y-res| **KBDPR:*key*:1** ScRiPtSePaRaToR ***ms1***  
 	0 ScRiPtSePaRaToR x-res|y-res| **KBDRL:*key*:0** ScRiPtSePaRaToR ***ms2***
   
-	***key*** = key code <sub>(key code table)</sub>  
+	***key*** = key code <sub>(key codes)</sub>  
 
 - **Mouse Actions (Click/Drag/Slide)**
 
@@ -58,7 +58,7 @@ adb_port=62032
 
 	5 ScRiPtSePaRaToR ScRiPtSePaRaToR ***ms***  
 
-### KEY CODE TABLE
+### KEY CODES
  
 |Key |BackSpace|Enter|Shift|Home|Back|Task|
 |:--:|:--:     |:--: |:--: |:--:|:--:|:--:|
