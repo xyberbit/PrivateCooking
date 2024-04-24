@@ -24,39 +24,39 @@ adb_port=62032
 - 1 = Character Input
 - 5 = End of Script
 
-### ACTION COMMANDS ~(subscript for description)~
+### ACTION COMMANDS <sub>(subscript for description)</sub>
+- **Constants**
+
+	**x-res|y-res** = screen resolution
 
 - **Character Input**
 
-	**1** ScRiPtSePaRaToR ***chr* |0** ScRiPtSePaRaToR **ms**
+	1 ScRiPtSePaRaToR ***chr*|0** ScRiPtSePaRaToR ***ms***
 
-	*chr* = typeable character  
+	***chr*** = typeable character  
 
 - **Key Press/Release**
 
-	**0** ScRiPtSePaRaToR **x-res|y-res | KBDPR: *key* :1** ScRiPtSePaRaToR **ms1**  
-	**0** ScRiPtSePaRaToR **x-res|y-res | KBDRL: *key* :0** ScRiPtSePaRaToR **ms2**
-
-	x-res|y-res = screen resolution  
-	*key* = key code ~(key code table)~  
+	0 ScRiPtSePaRaToR x-res|y-res| **KBDPR:*key*:1** ScRiPtSePaRaToR ***ms1***  
+	0 ScRiPtSePaRaToR x-res|y-res| **KBDRL:*key*:0** ScRiPtSePaRaToR ***ms2***
+  
+	***key*** = key code <sub>(key code table)</sub>  
 
 - **Mouse Actions (Click/Drag/Slide)**
 
-	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:1:0: *x1:y1*** ScRiPtSePaRaToR **ms1** ~(mouse button press)~ 
-	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:1:2: *x2:y2*** ScRiPtSePaRaToR **ms2** ~(mouse move, only for drag/slide)~  
-		... ~(repeat with different x:y for more moves)~  
-	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:6** ScRiPtSePaRaToR **msz** ~(mouse button release, 4 continueous actions)~ 
-	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:6** ScRiPtSePaRaToR **msz**
-	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:1** ScRiPtSePaRaToR **msz**
-	**0** ScRiPtSePaRaToR **x-res|y-res | MSBRL:0:0** ScRiPtSePaRaToR **msz**
+	0 ScRiPtSePaRaToR x-res|y-res| **MULTI:1:0:*x1:y1*** ScRiPtSePaRaToR ***ms1*** <sub>(mouse button press)</sub>  
+	0 ScRiPtSePaRaToR x-res|y-res| **MULTI:1:2:*x2:y2*** ScRiPtSePaRaToR ***ms2*** <sub>(mouse move, only for drag/slide)</sub>  
+	... <sub>(repeat with different x:y for more moves)</sub>  
+	0 ScRiPtSePaRaToR x-res|y-res| **MULTI:0:6** ScRiPtSePaRaToR ***msz*** <sub>(ending of multi)</sub>  
+	0 ScRiPtSePaRaToR x-res|y-res| **MULTI:0:6** ScRiPtSePaRaToR ***msz***  
+	0 ScRiPtSePaRaToR x-res|y-res| **MULTI:0:1** ScRiPtSePaRaToR ***msz***  
+	0 ScRiPtSePaRaToR x-res|y-res| **MSBRL:0:0** ScRiPtSePaRaToR ***msz*** <sub>(mouse button release)</sub>  
 	
-	x-res|y-res = screen resolution  
-	*x:y* = coordinate of mouse
-	MSBRL = Mouse Button Release
+	***x:y*** = coordinate of mouse
 
 - **End of Script**
 
-	**5** ScRiPtSePaRaToR ScRiPtSePaRaToR **ms**  
+	5 ScRiPtSePaRaToR ScRiPtSePaRaToR ***ms***  
 
 ### KEY CODE TABLE
  
