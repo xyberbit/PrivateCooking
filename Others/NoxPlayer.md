@@ -5,10 +5,11 @@
 %USERPROFILE%\AppData\Local\Nox\*.ini
 
 [setting]  
-frames=4
-adb_port=62032
+frames=4  
+adb_port=62032  
+...
 
-## Recorded Macro Script (unexisting space for readibility)
+## Recorded Macro Script (unexisting spaces for readability)
 ```
 # ScRiPtSePaRaToR ACT ScRiPtSePaRaToR #
 │                 │                   │
@@ -23,44 +24,42 @@ adb_port=62032
 - 1 = Character Input
 - 5 = End of Script
 
-### ACTION COMMANDS
+### ACTION COMMANDS ~(subscript for description)~
 
 - **Character Input**
 
-	**1** ScRiPtSePaRaToR **CHR | 0** ScRiPtSePaRaToR **ms**
+	**1** ScRiPtSePaRaToR ***chr* |0** ScRiPtSePaRaToR **ms**
 
-	CHR = typeable character
-	0 = end of action
+	*chr* = typeable character  
 
 - **Key Press/Release**
 
-	**0** ScRiPtSePaRaToR **X-Res | Y-Res | KBDPR : KEY : 1** ScRiPtSePaRaToR **ms**
-	**0** ScRiPtSePaRaToR **X-Res | Y-Res | KBDRL : KEY : 0** ScRiPtSePaRaToR **ms**
+	**0** ScRiPtSePaRaToR **x-res|y-res | KBDPR: *key* :1** ScRiPtSePaRaToR **ms1**  
+	**0** ScRiPtSePaRaToR **x-res|y-res | KBDRL: *key* :0** ScRiPtSePaRaToR **ms2**
 
-	X-Res | Y-Res = screen resolution
-	KEY = key code
-	1 = coming actions
-	0 = end of action
+	x-res|y-res = screen resolution  
+	*key* = key code ~(key code table)~  
 
-- **Mouse Button Press/Release**
+- **Mouse Actions (Click/Drag/Slide)**
 
-- **Multiple Actions**
-
-	**0** ScRiPtSePaRaToR **MULTI X-Res | Y-Res | KBDPR : KEY : 1** ScRiPtSePaRaToR **ms**
+	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:1:0: *x1:y1*** ScRiPtSePaRaToR **ms1** ~(mouse button press)~ 
+	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:1:2: *x2:y2*** ScRiPtSePaRaToR **ms2** ~(mouse move, only for drag/slide)~  
+		... ~(repeat with different x:y for more moves)~  
+	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:6** ScRiPtSePaRaToR **msz** ~(mouse button release, 4 continueous actions)~ 
+	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:6** ScRiPtSePaRaToR **msz**
+	**0** ScRiPtSePaRaToR **x-res|y-res | MULTI:0:1** ScRiPtSePaRaToR **msz**
+	**0** ScRiPtSePaRaToR **x-res|y-res | MSBRL:0:0** ScRiPtSePaRaToR **msz**
+	
+	x-res|y-res = screen resolution  
+	*x:y* = coordinate of mouse
+	MSBRL = Mouse Button Release
 
 - **End of Script**
 
-	**5** ScRiPtSePaRaToR ScRiPtSePaRaToR **ms**
+	**5** ScRiPtSePaRaToR ScRiPtSePaRaToR **ms**  
+
+### KEY CODE TABLE
  
-KEY CODE
-
-158 Android Back
-102 Android Home
-221 Android Task
-
-
-MULTI:1:0:xx:yy - touch down at xx,yy coordinates
-
-MULTI:0:6 and MSBRL:1337814:-1072938 - two lines for touch up, never experimented if both are really needed, just copied from macro; numbers in MSBRL are always the same, they are not coordinates
-
-MULTI:1:2:xx:yy - used after touch down, this command swipes to xx,yy. Used repeatedly for short intervals, should be followed with touch up command for 'end of swipe'.
+|Key |BackSpace|Enter|Shift|Home|Back|Task|
+|:--:|:--:     |:--: |:--: |:--:|:--:|:--:|
+|Code|14       |28   | 42  |102 |158 |221 |
