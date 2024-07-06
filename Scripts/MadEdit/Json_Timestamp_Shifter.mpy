@@ -1,0 +1,14 @@
+####Timestamp Shifter
+####!Alt-T
+
+me = MadEdit()
+
+inc = InputBox("A number for in/de-crement", "Json Timestamp Shifter")
+
+while me.FindTextNext("\"Timestamp\": ", False, False, False, False, False, -1, -1):
+    me.Right()
+    me.SelEndLine()
+    me.SelLeft()
+    mm = me.GetSelText()
+    mm = int(mm) + int(inc)
+    me.InsertStr(str(mm))
