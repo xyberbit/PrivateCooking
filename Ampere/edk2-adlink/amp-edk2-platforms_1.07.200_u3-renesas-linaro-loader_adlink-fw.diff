@@ -1,0 +1,40 @@
+diff -Nur -X x-diff org/edk2-platforms/Platform/Ampere/JadePkg/Jade.dsc dev/edk2-platforms/Platform/Ampere/JadePkg/Jade.dsc
+--- org/edk2-platforms/Platform/Ampere/JadePkg/Jade.dsc	2021-06-28 14:14:22.151265584 +0800
++++ dev/edk2-platforms/Platform/Ampere/JadePkg/Jade.dsc	2021-07-01 15:43:52.010072715 +0800
+@@ -229,10 +229,19 @@
+   #
+   Platform/Ampere/JadePkg/Drivers/BootOptionsRecoveryDxe/BootOptionsRecoveryDxe.inf
+   Silicon/Ampere/AmpereAltraPkg/Drivers/IpmiBootDxe/IpmiBootDxe.inf
++
++
++  #
++  # USB 3.0 Renesas μPD70220x
++  #
++  Drivers/RenesasFirmwarePD720202/RenesasFirmwarePD720202.inf {
++    <LibraryClasses>
++      DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
++  }
+
+diff -Nur -X x-diff org/edk2-platforms/Platform/Ampere/JadePkg/Jade.fdf dev/edk2-platforms/Platform/Ampere/JadePkg/Jade.fdf
+--- org/edk2-platforms/Platform/Ampere/JadePkg/Jade.fdf	2021-06-28 14:14:22.151265584 +0800
++++ dev/edk2-platforms/Platform/Ampere/JadePkg/Jade.fdf	2021-07-01 16:20:52.661548303 +0800
+@@ -413,6 +413,14 @@
+   INF Platform/Ampere/JadePkg/Drivers/BootOptionsRecoveryDxe/BootOptionsRecoveryDxe.inf
+   INF Silicon/Ampere/AmpereAltraPkg/Drivers/IpmiBootDxe/IpmiBootDxe.inf
+ 
++  #
++  # USB 3.0 Renesas μPD70220x
++  #
++  INF Drivers/RenesasFirmwarePD720202/RenesasFirmwarePD720202.inf
++  FILE FREEFORM = 97E3C784-3ADA-420C-B55C-46CBB57CEFE1 {
++    SECTION RAW = Drivers/RenesasFirmwarePD720202/K2026090.mem
++  }
++
+ [FV.SystemFirmwareDescriptor]
+ FvAlignment        = 8
+ ERASE_POLARITY     = 1
+@@ -454,3 +462,4 @@
+   INF  SignedCapsulePkg/Universal/SystemFirmwareUpdate/SystemFirmwareUpdateDxe.inf
+ 
+ !include Platform/Ampere/AmperePlatformPkg/FvRules.fdf.inc
++!include Drivers/RenesasFirmwarePD720202/AdlinkFvRules.fdf.inc

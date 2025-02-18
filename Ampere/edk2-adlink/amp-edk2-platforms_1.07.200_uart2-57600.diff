@@ -1,0 +1,48 @@
+diff -Nur -X x-diff org/Silicon/Ampere/AmpereAltraPkg/AmpereAltraPkg.dsc.inc new/Silicon/Ampere/AmpereAltraPkg/AmpereAltraPkg.dsc.inc
+--- org/Silicon/Ampere/AmpereAltraPkg/AmpereAltraPkg.dsc.inc	2021-08-07 12:56:51.055947000 +0800
++++ new/Silicon/Ampere/AmpereAltraPkg/AmpereAltraPkg.dsc.inc	2021-08-20 19:33:57.691230285 +0800
+@@ -454,7 +454,7 @@
+   # Ampere Altra UART2
+   #
+   gArmPlatformTokenSpaceGuid.PcdSerialDbgRegisterBase|0x100002620000
+-  gArmPlatformTokenSpaceGuid.PcdSerialDbgUartBaudRate|115200
++  gArmPlatformTokenSpaceGuid.PcdSerialDbgUartBaudRate|57600
+ 
+   #
+   # We want to use the Shell Libraries but don't want it to initialise
+diff -Nur -X x-diff org/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.c new/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.c
+--- org/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.c	2021-08-07 12:56:51.063947000 +0800
++++ new/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.c	2021-08-20 15:19:38.088710636 +0800
+@@ -84,6 +84,21 @@
+                );
+   }
+ 
++  if (FixedPcdGet64 (PcdSerialDbgRegisterBase) != 0) {
++    BaudRate = FixedPcdGet64 (PcdSerialDbgUartBaudRate);
++
++    /* Initialize uart mmc port */
++    Status = PL011UartInitializePort (
++               (UINTN)FixedPcdGet64 (PcdSerialDbgRegisterBase),
++               FixedPcdGet32 (PL011UartClkInHz),
++               &BaudRate,
++               &ReceiveFifoDepth,
++               &Parity,
++               &DataBits,
++               &StopBits
++               );
++  }
++
+   return Status;
+ }
+ 
+diff -Nur -X x-diff org/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.inf new/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.inf
+--- org/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.inf	2021-08-07 12:56:51.063947000 +0800
++++ new/Silicon/Ampere/AmpereAltraPkg/Library/ArmPlatformLib/ArmPlatformLib.inf	2021-08-20 12:24:36.933405246 +0800
+@@ -55,3 +55,6 @@
+   gEfiMdePkgTokenSpaceGuid.PcdUartDefaultDataBits
+   gEfiMdePkgTokenSpaceGuid.PcdUartDefaultParity
+   gEfiMdePkgTokenSpaceGuid.PcdUartDefaultStopBits
++  
++  gArmPlatformTokenSpaceGuid.PcdSerialDbgRegisterBase
++  gArmPlatformTokenSpaceGuid.PcdSerialDbgUartBaudRate
+

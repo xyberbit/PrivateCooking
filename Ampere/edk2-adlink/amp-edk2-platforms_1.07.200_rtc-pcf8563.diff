@@ -1,0 +1,12 @@
+diff -ruN -X x-diff org/Platform/Ampere/JadePkg/Library/PCF85063RealTimeClockLib/PCF85063.c new/Platform/Ampere/JadePkg/Library/PCF85063RealTimeClockLib/PCF85063.c
+--- org/Platform/Ampere/JadePkg/Library/PCF85063RealTimeClockLib/PCF85063.c	2021-08-07 12:56:50.939946000 +0800
++++ new/Platform/Ampere/JadePkg/Library/PCF85063RealTimeClockLib/PCF85063.c	2021-09-16 01:40:58.980634064 +0800
+@@ -27,7 +27,7 @@
+ #define RTC_DEFAULT_MIN_YEAR           2000
+ #define RTC_DEFAULT_MAX_YEAR           2099
+ 
+-#define RTC_ADDR                       0x4
++#define RTC_ADDR                       2 // PCF5863:2, PCF58063:4
+ #define RTC_DATA_BUF_LEN               8
+ 
+ /**

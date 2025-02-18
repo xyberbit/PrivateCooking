@@ -1,0 +1,12 @@
+diff -ruN -X x-diff org/Platform/Ampere/JadePkg/Library/PcieBoardLib/PcieBoard.c new/Platform/Ampere/JadePkg/Library/PcieBoardLib/PcieBoard.c
+--- org/Platform/Ampere/JadePkg/Library/PcieBoardLib/PcieBoard.c	2021-08-07 12:56:50.939946000 +0800
++++ new/Platform/Ampere/JadePkg/Library/PcieBoardLib/PcieBoard.c	2021-09-16 01:30:00.538828625 +0800
+@@ -68,6 +68,8 @@
+ #define BIT(nr)                         (1 << (nr))
+ #endif
+ 
++#define GpioModeConfig(...) // GPIO not used for PERST
++
+ extern CHAR16   gPcieVarstoreName[];
+ extern EFI_GUID gPcieFormSetGuid;
+ 
