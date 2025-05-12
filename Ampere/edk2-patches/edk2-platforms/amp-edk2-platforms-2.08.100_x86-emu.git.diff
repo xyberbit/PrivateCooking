@@ -1,0 +1,29 @@
+diff --git a/Platform/Ampere/JadePkg/Jade.dsc b/Platform/Ampere/JadePkg/Jade.dsc
+index 1616fc2a37..f42fce8241 100755
+--- a/Platform/Ampere/JadePkg/Jade.dsc
++++ b/Platform/Ampere/JadePkg/Jade.dsc
+@@ -368,3 +368,8 @@
+   # SystemFirmwareUpdateDxe
+   #
+   Silicon/Ampere/AmpereAltraPkg/Drivers/SystemFirmwareUpdateDxe/SystemFirmwareUpdateDxe.inf
++  
++  #
++  # X86 Emulator
++  #
++  Emulator/X86EmulatorDxe/X86EmulatorDxe.inf
+diff --git a/Platform/Ampere/JadePkg/Jade.fdf b/Platform/Ampere/JadePkg/Jade.fdf
+index fd387723d0..88a9fad323 100755
+--- a/Platform/Ampere/JadePkg/Jade.fdf
++++ b/Platform/Ampere/JadePkg/Jade.fdf
+@@ -461,6 +461,11 @@ APRIORI DXE {
+   #
+   INF Silicon/Ampere/AmpereAltraPkg/Drivers/SystemFirmwareUpdateDxe/SystemFirmwareUpdateDxe.inf
+ 
++  #
++  # X86 Emulator
++  #
++  INF Emulator/X86EmulatorDxe/X86EmulatorDxe.inf
++
+ [FV.SystemFirmwareDescriptor]
+ FvAlignment        = 8
+ ERASE_POLARITY     = 1
