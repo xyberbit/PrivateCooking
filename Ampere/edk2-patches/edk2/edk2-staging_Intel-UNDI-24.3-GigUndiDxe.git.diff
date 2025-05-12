@@ -1,0 +1,88 @@
+diff --git a/GigUndiDxe/e1000_defines.h b/GigUndiDxe/e1000_defines.h
+index fa2cf17..ad27b12 100644
+--- a/GigUndiDxe/e1000_defines.h
++++ b/GigUndiDxe/e1000_defines.h
+@@ -1677,11 +1677,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ #ifndef UNREFERENCED_XPARAMETER
+ #define UNREFERENCED_XPARAMETER
+-#define UNREFERENCED_1PARAMETER(_p) (_p)
+-#define UNREFERENCED_2PARAMETER(_p, _q) (_p); (_q);
+-#define UNREFERENCED_3PARAMETER(_p, _q, _r) (_p); (_q); (_r);
+-#define UNREFERENCED_4PARAMETER(_p, _q, _r, _s) (_p); (_q); (_r); (_s);
+-#define UNREFERENCED_5PARAMETER(_p, _q, _r, _s, _t) (_p); (_q); (_r); (_s); (_t);
++#define UNREFERENCED_1PARAMETER(_p) if(_p)
++#define UNREFERENCED_2PARAMETER(_p, _q) if(_p)if(_q)
++#define UNREFERENCED_3PARAMETER(_p, _q, _r) if(_p)if(_q)if(_r)
++#define UNREFERENCED_4PARAMETER(_p, _q, _r, _s) if(_p)if(_q)if(_r)if(_s)
++#define UNREFERENCED_5PARAMETER(_p, _q, _r, _s, _t) if(_p)if(_q)if(_r)if(_s)if(_t)
+ #endif /* UNREFERENCED_XPARAMETER */
+ #ifndef E1000_UNUSEDARG
+ #define E1000_UNUSEDARG
+diff --git a/GigUndiDxe/e1000_ich8lan.c b/GigUndiDxe/e1000_ich8lan.c
+index 3051e7a..ca4ede7 100644
+--- a/GigUndiDxe/e1000_ich8lan.c
++++ b/GigUndiDxe/e1000_ich8lan.c
+@@ -103,7 +103,7 @@ STATIC s32  e1000_reset_hw_ich8lan(struct e1000_hw *hw);
+ STATIC s32  e1000_init_hw_ich8lan(struct e1000_hw *hw);
+ STATIC s32  e1000_setup_link_ich8lan(struct e1000_hw *hw);
+ STATIC s32  e1000_setup_copper_link_ich8lan(struct e1000_hw *hw);
+-STATIC s32 e1000_disable_ulp_lpt_lp(struct e1000_hw *hw, bool force);
++//STATIC s32 e1000_disable_ulp_lpt_lp(struct e1000_hw *hw, bool force);
+ STATIC s32  e1000_setup_copper_link_pch_lpt(struct e1000_hw *hw);
+ STATIC s32  e1000_get_link_up_info_ich8lan(struct e1000_hw *hw,
+ 					   u16 *speed, u16 *duplex);
+@@ -1115,13 +1115,13 @@ STATIC s32 e1000_check_for_copper_link_ich8lan(struct e1000_hw *hw)
+ 	if (!mac->get_link_status)
+ 		return E1000_SUCCESS;
+ 
+-		/* First we want to see if the MII Status Register reports
+-		 * link.  If so, then we want to get the current speed/duplex
+-		 * of the PHY.
+-		 */
+-		ret_val = e1000_phy_has_link_generic(hw, 1, 0, &link);
+-		if (ret_val)
+-			return ret_val;
++	/* First we want to see if the MII Status Register reports
++	 * link.  If so, then we want to get the current speed/duplex
++	 * of the PHY.
++	 */
++	ret_val = e1000_phy_has_link_generic(hw, 1, 0, &link);
++	if (ret_val)
++		return ret_val;
+ 
+ 	if (hw->mac.type == e1000_pchlan) {
+ 		ret_val = e1000_k1_gig_workaround_hv(hw, link);
+diff --git a/GigUndiDxe/e1000_osdep.h b/GigUndiDxe/e1000_osdep.h
+index 64992ed..3230206 100644
+--- a/GigUndiDxe/e1000_osdep.h
++++ b/GigUndiDxe/e1000_osdep.h
+@@ -33,6 +33,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #include <Base.h>
+ #include <Library/BaseLib.h>
+ #include <Library/BaseMemoryLib.h>
++#include <Library/DebugLib.h>
+ 
+ 
+ #ifndef EFI_SPECIFICATION_VERSION
+@@ -280,13 +281,14 @@ E1000WriteRegIo (
+ typedef BOOLEAN boolean_t;
+ 
+ 
+-#if (0)
++#if (1)
++#define _xD(...) DEBUG((DEBUG_INFO, __VA_ARGS__))
+ #define DEBUGFUNC(F)
+-#define DEBUGOUT(s) Aprint (s);
+-#define DEBUGOUT1(s, a) Aprint (s, a);
+-#define DEBUGOUT2(s, a, b) Aprint (s, a, b);
+-#define DEBUGOUT3(s, a, b, c) Aprint (s, a, b, c);
+-#define DEBUGOUT7(s, a, b, c, d, e, f, g) Aprint (s, a, b, c, d, e, f, g);
++#define DEBUGOUT(s) _xD (s)
++#define DEBUGOUT1(s, a) _xD (s, a)
++#define DEBUGOUT2(s, a, b) _xD (s, a, b)
++#define DEBUGOUT3(s, a, b, c) _xD (s, a, b, c)
++#define DEBUGOUT7(s, a, b, c, d, e, f, g) _xD (s, a, b, c, d, e, f, g)
+ #else /* NOT (0) */
+ 
+ /** Macro wrapper for shared code, blank here
