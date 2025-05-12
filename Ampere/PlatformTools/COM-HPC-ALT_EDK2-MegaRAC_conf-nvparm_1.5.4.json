@@ -1,0 +1,1839 @@
+{
+  "SPIDeviceList": {"MX25L25673GMI 3.00 Mbit SPI0, Chip Select 0": {
+    "Spi ChipSelect": 0,
+    "Spi Bus": 0,
+    "isSelected": true,
+    "Spi Frequency": 3000000,
+    "Name": "MX25L25673GMI"
+  }},
+  "getSettingJSONObject": {
+    "PowerOffBeforeSettingNvparamNeeded": false,
+    "IsDisableBmcTest": true,
+    "IsAutoAppendTimestampInLogConstantly": false,
+    "CpldPreCommand": "gpiotool 98 --set-data-high",
+    "IsTuneAvs": false,
+    "DmtBootingTimeout": 600,
+    "UpdateScpImageAddress": "-b 1 -s 0x50",
+    "IsDdrCeRasIntervalEnabled": true,
+    "XdiagEfiStartupTimeout": 5,
+    "CliBootingFailureSignature": [],
+    "NvparamPostCommand": "gpiotool --set-data-high 56",
+    "ConsoleBlockDelay": 150,
+    "LinuxBootingTimeout": 720,
+    "VrdI2cBus": [
+      11,
+      12
+    ],
+    "LinuxBootingFailureSignature": [
+      "UEFI Interactive Shell",
+      "UEFI Interactive"
+    ],
+    "BiosScreenDisplayedSignature": ["Boot Manager"],
+    "IsCheckErrorAfterPowerOff4Atf": false,
+    "IsExecuteOnBoardScripts": false,
+    "UpdateCpldLastActionMode": "Do_Nothing",
+    "IsSaveSensorLogToCsv": false,
+    "BiosLoginTimeout": 600,
+    "SelectedUEFISoftware": "",
+    "XdiagLinuxImageName": "images/jade/xdiaglinux_altra_1.39_20230908",
+    "IsPressingEnterOnBiosTabNeeded": true,
+    "UefiPrompt": "Shell> ",
+    "UpdateAtfLastActionMode": "Do_Nothing",
+    "IsUpdateScpImage": false,
+    "IsTuneCpuSoc09V": true,
+    "IsEnableUpdateImageUsingIpmiTool": true,
+    "CliBootingPassSignature": [
+      "PMpro output complete",
+      "ZQCS period"
+    ],
+    "ThermalTemperatureMonitorS1": "",
+    "ThermalTemperatureMonitorS0": "S0_SOC_Temp",
+    "AtfBootingPassSignature": ["Booting Trusted Firmware"],
+    "IsUpdateTtyUSBBasedOnTtyId": true,
+    "XdiagPrompt": "xDiag> ",
+    "IsDisableUpdateCpldImageBackPlane": false,
+    "WindowsUser": "Administrator",
+    "ScanDeviceByCommandEnabled": false,
+    "XdiagLinuxStartupTimeout": 30,
+    "IsSwitchSolToUart": false,
+    "NvparamDefinitionFileName": "configs/altra_nvparam_def_2.06.txt",
+    "IsThermalSensorsSupportedOnBMC": true,
+    "VminSocOffset": -38,
+    "IsUploadLogToServer": false,
+    "SocketIndex": 0,
+    "IpmitoolPassword": "admin",
+    "IsTuneDdrSpeed": true,
+    "DmtPrompt": "Aero-DMT-x3>",
+    "WindowsTmpFolder": "C:\\Testing",
+    "DefaultCpldFilePath": "/tmp/CPLD_LCMXO2_4000HC.jed",
+    "MaxTriesUefiShellTabKeystrokeMove": 100,
+    "IsTuneCpuFrequency": false,
+    "TemperatureSensorColors": ["#FF0000"],
+    "IsEnableCpuCore": true,
+    "IsCheckBmcSelLog": false,
+    "IsOpenCKermitWithSudo": true,
+    "CcixPrbsEnableRCA23": false,
+    "RedfishUpdateSCPImage": "{\"Targets\":[\"/redfish/v1/UpdateService/FirmwareInventory/BOOTFWImage1\",\"/redfish/v1/UpdateService/FirmwareInventory/BOOTFWImage2\"]}",
+    "VrdI2cAddress": [
+      96,
+      104,
+      106,
+      88
+    ],
+    "RedfishUser": "ADMIN",
+    "IsTuneDdrMCUMask": true,
+    "AtfDdrMarginImageName": "images/jade/jade_aptiov_atf_1P_signed_2.10.20221028.hpm",
+    "MicrocomCommand": "sudo microcom -s 115200 -p <ttyDev>; exit",
+    "CcixSpeedValues": [
+      10,
+      16,
+      20,
+      25
+    ],
+    "IsUpdateDmtImage": false,
+    "IsDisableCliConsole": true,
+    "AtfBootingFailureSignature": [
+      "NS Watchdog expired. Resetting ...",
+      "PANIC at PC"
+    ],
+    "IsDecodeBmcSelLog": false,
+    "WindowsBootingFailSignature": [
+      "EDK II",
+      "UEFI Interactive Shell",
+      "UEFI Interactive",
+      "BLUESCREEN",
+      "Your device ran into a problem"
+    ],
+    "ThermalPowerFormulaS0": "S0_CPU_Pwr",
+    "IsRebootBMCAfterUpdateAtfImage": false,
+    "ThermalPowerFormulaS1": "",
+    "XdiagWinImageName": "images/xDiagWin_v3.11_20210930.zip",
+    "IsCheckDmtBooting": true,
+    "LinuxPassword": "root",
+    "RedfishOemParameters": "{\"ImageType\":\"HPM\"}",
+    "UpdateDmtLastActionMode": "Do_Nothing",
+    "SlimproDdrMarginImageName": "images/jade/altra_scp_signed_2.10.20221028.hpm",
+    "DdrTestTimeoutOffset": 900,
+    "BmcImageName": "images/jade/jade_bmc_1P_2.17.104.ima",
+    "UbootPrompt": "U-Boot>",
+    "IsS1CliConsoleDisabled": true,
+    "SutOSName": "CentOS",
+    "NvparamUtilToolName": "nvparm",
+    "AtfBootingTimeout": 360,
+    "BiosKeystrokeMoveDelay": 2,
+    "CcixDisableToAli": false,
+    "LowEcidAddress": "mdw -l 0x50002d14",
+    "DdrBootingFailureSignature": [
+      "DDR INIT ERROR",
+      "ERROR:   DDR initialization failure",
+      "ERROR:     MC[",
+      "ERROR:   SK["
+    ],
+    "XdiagBmcStartupTimeout": 20,
+    "CcixSpeedValue": 25,
+    "IsCheckErrorAfterPowerOff4Linux": true,
+    "IsAutoFlushLogConstantly": false,
+    "IsCheckPowerStatus": true,
+    "CliPrompt": "cli>",
+    "ConsoleBlockSize": 5,
+    "EnterBiosBootingSignature": [
+      "PROGRESS CODE: V01040001",
+      "PROGRESS CODE: V03058001",
+      "Checkpoint 4F",
+      "Checkpoint 60",
+      "Checkpoint 61",
+      "Checkpoint 9A"
+    ],
+    "DdrBootingPassSignature": [
+      "PROGRESS CODE",
+      "DDR INIT STS_OK",
+      "DRAM memory regions:"
+    ],
+    "IsRemoveNonPrintCharacters": true,
+    "IsCheckErrorAfterPowerOff4Cli": false,
+    "IsUpdateBMCImage": false,
+    "BootOptionScreenDisplayedSignature": ["UEFI Shell"],
+    "IsSaveErrorLogInCsvFile": false,
+    "WindowsPowershellPrompt": "PS",
+    "IsForceToUpdateDmtImage": false,
+    "IsCheckLinuxBooting": true,
+    "IsCheckAtfBooting": false,
+    "TotalSocket": 1,
+    "VrdUtilToolName": "images/amp_vrd_prog",
+    "LinuxMd5Command": "md5sum",
+    "IsTuneScpConsole": false,
+    "BackPlaneCpldImageName": "images/jade/Mt_Jade_NVMeBP_A02.jed",
+    "NvparamFailSafe": [
+      "0x120000",
+      "true"
+    ],
+    "WindowsCmdPrompt": "C:\\",
+    "VrdImageName": [
+      "images/jade/vrd/Mt.Jade_XDPE12284_8n0_PCP_CPU_+0V75_PCP_S0_0XC0_DBA6F23D_20210310.xsf",
+      "images/jade/vrd/CPU0_0XD0_DDR0123_VDDQ_35mV_0.293mohm.xsf",
+      "images/jade/vrd/CPU0_0XD4_DDR4567_VDDQ_35mV_0.293mohm.xsf",
+      "images/jade/vrd/Mt.Jade_XDPE12254_1n0_+0V85_VDDC_RCA_S0_+0V8_VDDC_SOC_S0_20200715_1830_0.75V_loopA.xsf",
+      "images/jade/vrd/Mt.Jade_XDPE12284_8n0_PCP_CPU_+0V75_PCP_S1_0XC0_B95282D8_20210310.xsf",
+      "images/jade/vrd/CPU1_0XD0_DDR0123_VDDQ_35mV_0.293mohm.xsf",
+      "images/jade/vrd/CPU1_0XD4_DDR4567_VDDQ_35mV_0.293mohm.xsf",
+      "images/jade/vrd/Mt.Jade_XDPE12254_1n0_+0V85_VDDC_RCA_S1_+0V8_VDDC_SOC_S1_20200715_1816_0.75V_loopA.xsf"
+    ],
+    "NvparamUUID": [
+      "0x100000",
+      "true"
+    ],
+    "IsTuneCcixSpeed": false,
+    "ECIDInformationEnabled": false,
+    "SlimproImageName": "images/jade/altra_scp_signed_2.10.20221028.hpm",
+    "AutoAppendTimestampInterval": 30,
+    "HighEcidAddress": "mdw -l 0x50002d18",
+    "BmcAutoLogoutDisabled": true,
+    "IsCheckErrorAfterPowerOff4Bmc": false,
+    "CkermitCommand": "sudo kermit -c -y <config_file> -f; exit",
+    "DmtImageName": "images/jade/jade_aptiov_atf_1P_signed_2.10.20221028.hpm",
+    "AtfImageName": "images/jade/jade_aptiov_atf_1P_signed_2.10.20221028.hpm",
+    "IsTakeSnapshot": false,
+    "SelectedChipGen": "",
+    "SlimproPcieMarginImageName": "images/jade/altra_scp_signed_1.01.20210128-tool.hpm",
+    "CpuFrequencyValue": 3000,
+    "DefaultBmcBiosUpgradeCommand": "amp_hostfw_update",
+    "RedfishUpdateBMCImage": "{\"Targets\":[\"/redfish/v1/UpdateService/FirmwareInventory/BMCImage1\",\"/redfish/v1/UpdateService/FirmwareInventory/BMCImage2\"]}",
+    "PowerSensorColors": [
+      "#00FFFF",
+      "#FF00FF"
+    ],
+    "IsCheckUefiBooting": true,
+    "UefiBootingPassSignature": [
+      "PROGRESS CODE: V03050006",
+      "PROGRESS CODE: V03058001"
+    ],
+    "TemperatureSensorNames": ["S0_SOC_Temp"],
+    "IsDdrCeRasThresholdEnabled": true,
+    "SelectedBMCSoftware": "",
+    "DmtBootingPassSignature": [
+      "Start PLATFORM tool mode ...",
+      "Platform Mem Tool mode!"
+    ],
+    "IsUpdateAtfImage": false,
+    "LinuxPrompt": "# ",
+    "DmtDdrMarginImageName": "images/jade/jade_aptiov_atf_1P_signed_2.10.20221028.hpm",
+    "IsCheckErrorAfterPowerOff4S1Cli": false,
+    "IsEnableUpdateImageUsingRedfish": false,
+    "NvparamRevision": "2.06",
+    "IsEdk2": true,
+    "VmaxSocOffset": 37,
+    "LinuxBootingPassSignature": ["login:"],
+    "IsXdiagBmcTestAvailable": true,
+    "IsPowerCycleByIpmiTool": false,
+    "CpuTempSensorName": "S0_SOC_Temp",
+    "BootToUefiShellColoredText": "[0m\u001b[37m\u001b[40mUEFI Shell",
+    "UpdateVrdPreCommand": "gpiotool --set-data-low 149",
+    "NvparamBoardDefinitionFileName": "configs/altra_nvparam_board_def_2.06.txt",
+    "IsTransferUsingTftp": false,
+    "TmpFolder": "/var/tmp",
+    "IsEnableUpdateCPLDImage": false,
+    "ScpBootingTimeout": 120,
+    "WindowsBootingTimeout": 900,
+    "SelectedSocketNumber": "",
+    "XdiagBmcImageName": "images/jade/xdiagbmc_jade_1.11.20211001.tar",
+    "NvparamUserDefined": [
+      "0x110000",
+      "true"
+    ],
+    "NvparamPreCommand": "which nvparm >/dev/null || export PATH=$PATH:/conf; gpiotool --set-data-low 56",
+    "WindowsSacPrompt": "SAC>",
+    "MailAddresses": [],
+    "MaxTriesKeystrokeMove": 15,
+    "BiosKeystrokeMove": [
+      "1B",
+      "5B",
+      "42"
+    ],
+    "PowerSensorNames": [
+      "S0_CPU_Pwr",
+      "S0_MEM_Pwr"
+    ],
+    "BiosScreenDisplayTimeout": 300,
+    "IsCheckScpBooting": false,
+    "WindowsPassword": "Ampere@4655",
+    "XdiagEfiImageName": "images/jade/xdiagefi_jade_v1.31.211001.efi",
+    "IsTransferUsingScp": true,
+    "SelectedBoardRev": "",
+    "LinuxUser": "root",
+    "IsOpenBmc": false,
+    "IsEnableUpdateImageUsingRom": false,
+    "UefiBootingFailureSignature": [
+      "ERROR:   SK",
+      "ERROR:     MC"
+    ],
+    "IsDebugMode": false,
+    "IsRebootBmcAfterUpdateDmtImage": false,
+    "RedfishPassword": "ADMIN",
+    "DmtBootingFailureSignature": [
+      "ERROR:   SK",
+      "ERROR:     MC",
+      "ERR: "
+    ],
+    "IsTuneDdrVoltage": true,
+    "AvsOffset": 50,
+    "DefaultCpldUpdateCommand": "amp_cpld_update",
+    "EcidDmidecode": "dmidecode -t 4",
+    "IpmitoolUser": "admin",
+    "MotherBoardCpldImageName": "images/jade/Mt_Jade_A06.jed",
+    "IsEnableUpdateVRDImage": false,
+    "IsDisableFailSafe": true,
+    "IsRebootLinuxWithSudo": false,
+    "IsUpdateFailOverImage": false,
+    "NvparamBoardSetting": [
+      "0x5F0000",
+      "false"
+    ],
+    "VnomSocOffset": 0,
+    "UefiBootingTimeout": 600,
+    "AutoFlushLogInterval": 120,
+    "WindowsBootingPassSignature": [
+      "The CMD command",
+      "EVENT:"
+    ],
+    "IsRemoveAnsiColorCodes": true,
+    "UpdateScpLastActionMode": "Do_Nothing",
+    "BmcLinuxBootingTimeout": 720,
+    "BootOptionTabColoredText": "[0m\u001b[37m\u001b[40m\u001b[01CBoot Manager",
+    "DefaultBmcSlimProUpgradeCommand": "amp_hostfw_update",
+    "UpdateVrdPostCommand": "gpiotool --set-data-high 149",
+    "IsRebootBMCAfterUpdateSlimproImage": false,
+    "CleanNvparmCcixPRBS": [
+      14811136,
+      14876672,
+      2031616,
+      14942208
+    ],
+    "BiosLoginKeyStroke": "1B",
+    "IsGeneratePdf": false,
+    "RedfishUpdateATFUEFIImage": "{\"Targets\":[\"/redfish/v1/UpdateService/FirmwareInventory/BIOSImage1\",\"/redfish/v1/UpdateService/FirmwareInventory/BIOSImage2\"]}"
+  },
+  "Board Name": "COM-HPC-ALT_EDK2",
+  "Version": "1.5.4 ",
+  "ProcessorList": {"Ampere® Altra™ 80-Core": {
+    "Core Count": "80",
+    "Version": "Altra(TM)",
+    "isSelected": true,
+    "Manufacturer": "Ampere(TM)",
+    "Name": "Altra",
+    "Core": "Ares"
+  }},
+  "BMCBoard": {
+    "getBmcPcieDeviceJSONObject": {
+      "BMC ASPEED VGA Graphics @ 0004:02:00.0": {
+        "[BMC ASPEED VGA Graphics]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.ASPEEDVgaGraphicsPcieDeviceTest",
+        "PCIe DeviceID": "2000",
+        "AER Time (*)": 15,
+        "PCIe Device_Class": "VGA compatible controller",
+        "PCIe ClassCode": "0300",
+        "PCIe DBDF": "0004:02:00.0",
+        "PCIe VendorID": "1a03",
+        "isSelected": false,
+        "Name": "BMC ASPEED VGA Graphics"
+      },
+      "BMC AST1150 @ 0004:01:00.0": {
+        "PCIe DeviceID": "1150",
+        "PCIe Device_Class": "PCI bridge",
+        "PCIe ClassCode": "0604",
+        "PCIe DBDF": "0004:01:00.0",
+        "PCIe VendorID": "1a03",
+        "isSelected": false,
+        "[BMC AST1150]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.AST1150PcieDeviceTest",
+        "Name": "BMC AST1150"
+      }
+    },
+    "getBmcI2cDeviceJSONObject": {
+      "TCA9539PWR, I2C6, Address: 0x74": {
+        "I2C Speed": 100000,
+        "I2C Bus": 6,
+        "I2C Address": 116,
+        "isSelected": true,
+        "[TCA9539PWR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TCA9539PWRI2cDeviceTest",
+        "BMC accessible": true,
+        "Name": "TCA9539PWR"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x28": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 40,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "PCF85063ATAY, I2C5, Address: 0x51": {
+        "I2C Speed": 100000,
+        "I2C Bus": 5,
+        "I2C Address": 81,
+        "Board Power-Off required": true,
+        "[PCF85063ATAY]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.PCF85063ATAYI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "PCF85063ATAY"
+      },
+      "Failover EEPROM, I2C2, Address: 0x50": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-low",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "I2C Address": 80,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Failover EEPROM",
+        "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x29": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 41,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "M24C64RMN6TP, I2C4, Address: 0x50": {
+        "I2C Speed": 100000,
+        "[M24C64RMN6TP]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.M24C64RMN6TPI2cDeviceTest",
+        "I2C Bus": 4,
+        "I2C Address": 80,
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "M24C64RMN6TP"
+      },
+      "SSIF I2C BMC To CPU, I2C3, Address: 0x4f": {
+        "I2C Speed": 100000,
+        "I2C Bus": 3,
+        "I2C Address": 79,
+        "isSelected": true,
+        "[SSIF I2C BMC To CPU]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.SSIFI2cDeviceTest",
+        "BMC accessible": true,
+        "Name": "SSIF I2C BMC To CPU"
+      },
+      "SSIF I2C BMC To CPU, I2C3, Address: 0x4e": {
+        "I2C Speed": 100000,
+        "I2C Bus": 3,
+        "I2C Address": 78,
+        "isSelected": true,
+        "[SSIF I2C BMC To CPU]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.SSIFI2cDeviceTest",
+        "BMC accessible": true,
+        "Name": "SSIF I2C BMC To CPU"
+      },
+      "Failover EEPROM, I2C2, Address: 0x53": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-low",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "I2C Address": 83,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Failover EEPROM",
+        "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+      },
+      "Failover EEPROM, I2C2, Address: 0x51": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-low",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "I2C Address": 81,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Failover EEPROM",
+        "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+      },
+      "Failover EEPROM, I2C2, Address: 0x52": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-low",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "I2C Address": 82,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Failover EEPROM",
+        "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x2a": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 42,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "Main EEPROM, I2C2, Address: 0x50": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-high",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+        "I2C Address": 80,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Main EEPROM"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x2b": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 43,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "Main EEPROM, I2C2, Address: 0x51": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-high",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+        "I2C Address": 81,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Main EEPROM"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x2c": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 44,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "Main EEPROM, I2C2, Address: 0x52": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-high",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+        "I2C Address": 82,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Main EEPROM"
+      },
+      "TMP175AIDGKR, I2C4, Address: 0x2d": {
+        "I2C Speed": 100000,
+        "I2C Bus": 4,
+        "I2C Address": 45,
+        "[TMP175AIDGKR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TMP175AIDGKRI2cDeviceTest",
+        "isSelected": true,
+        "BMC accessible": true,
+        "Name": "TMP175AIDGKR"
+      },
+      "Main EEPROM, I2C2, Address: 0x53": {
+        "S0 BMC Pre Cmd 1": "gpiotool 8 --set-data-high",
+        "I2C Speed": 100000,
+        "S0 BMC Pre Cmd 0": "gpiotool 226 --set-data-low",
+        "I2C Bus": 2,
+        "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+        "I2C Address": 83,
+        "Board Power-Off required": true,
+        "isSelected": true,
+        "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+        "S0 BMC Post Cmd 1": "gpiotool 226 --set-data-high",
+        "BMC accessible": true,
+        "Name": "Main EEPROM"
+      },
+      "PCA9545APW, I2C6, Address: 0x71": {
+        "I2C Speed": 100000,
+        "I2C Bus": 6,
+        "I2C Address": 113,
+        "isSelected": true,
+        "[PCA9545APW]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.PCA9548APWRI2cDeviceTest",
+        "BMC accessible": true,
+        "Name": "PCA9545APW"
+      },
+      "PCA9545APW, I2C6, Address: 0x70": {
+        "I2C Speed": 100000,
+        "I2C Bus": 6,
+        "I2C Address": 112,
+        "isSelected": true,
+        "[PCA9545APW]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.PCA9548APWRI2cDeviceTest",
+        "BMC accessible": true,
+        "Name": "PCA9545APW"
+      }
+    },
+    "getSettingJSONObject": {
+      "PowerResetChassisOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus chassis power reset",
+      "PowerResetChassisInband": "ipmitool chassis power reset",
+      "ReadAllSensorInband": "ipmitool sensor list all",
+      "OpenBmcATFConsoleSSHPort": "2202",
+      "OpenBmcLinuxConsoleSSHPort": "2200",
+      "BmcColdResetInband": "ipmitool mc reset cold",
+      "BmcColdResetOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus mc reset cold",
+      "OpenBmcBootingTimeout": "600",
+      "ReadSdrSensorsOutBand": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus sdr list",
+      "OpenBmcUpdateScpImageRedfishAPITimeout": "90",
+      "OpenBmcPlatformType": "",
+      "PowerStatusChassisInband": "ipmitool chassis power status",
+      "OpenBmcImageManifestTemplate": "purpose=xyz.openbmc_project.Software.Version.VersionPurpose.<ver_purpose>\nversion=<image_version>\nExtendedVersion=<extended_version>\nKeyType=OpenBMC\nHashType=RSA-SHA256\nMachineName=mtjade\n",
+      "ReadSpecificSensors": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus sensor reading",
+      "ProgramHpmImageAltra": "",
+      "OpenBmcReadSelOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus sel list",
+      "OpenBmcS1ScpConsoleSSHPort": "2203",
+      "TmpFolder": "/var/tmp",
+      "ConnectSOLConsole": "",
+      "XdiagPrompt": "xDiag> ",
+      "OpenBmcUpdateATFBiosImageRedfishAPITimeout": "90",
+      "OpenBmcFromResetColdToOffTimeout": "60",
+      "LinuxPassword": "superuser",
+      "SwitchSolAndUartTool": "/usr/sbin/ampere_uartmux_ctrl.sh",
+      "RebootOpenBMCBeforeFlashingATF": "false",
+      "ReadFruInband": "ipmitool fru print",
+      "OpenBmcS0ScpConsoleSSHPort": "2201",
+      "LinuxPrompt": " # ",
+      "UbootPrompt": "U-Boot>",
+      "OpenBmcClearSelOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus sel clear",
+      "PowerOffChassisInband": "obmcutil chassisoff",
+      "PowerCycleChassisOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus chassis power cycle",
+      "OpenBmcConsoleServerSetupTool": "/usr/sbin/obmc-console-server-setup.sh",
+      "DisconnectSOLConsole": "",
+      "OpenBmcAmpereFirmwareFlash": "ampere_firmware_upgrade.sh",
+      "ReadFruOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus fru print",
+      "PowerOffChassisOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus chassis power off",
+      "ReadMcInfoOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus mc info",
+      "OpenBmcClearSelInband": "ipmitool sel clear",
+      "PowerOnChassisInband": "obmcutil chassison",
+      "PowerStatusChassisOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus chassis power status",
+      "OpenBmcUpdateBMCImageRedfishAPITimeout": "300",
+      "PowerOnChassisOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus chassis power on",
+      "OpenBmcUpdateDMTImageRedfishAPITimeout": "90",
+      "LinuxUser": "sysadmin",
+      "ReadAllSensorOutband": "ipmitool -H <BMC_IP> -U <User> -P <Password> -C 17 -I lanplus -v sensor list all",
+      "IsOpenBmc": false,
+      "OpenBmcReadSelInband": "ipmitool sel list"
+    },
+    "IsTransferUsingTftp": false,
+    "getBmcSdioDeviceJSONObject": {"KLMBG2JETDB041 25.0 Mbit @ SDIO2": {
+      "Run Time (*)": 30,
+      "Sdio Frequency": 25000000,
+      "Board Power-Off required": true,
+      "isSelected": true,
+      "[KLMBG2JETDB041]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sdio.KLMBG2JETDB041SdioDeviceTest",
+      "BMC accessible": true,
+      "Sdio Bus": 2,
+      "Name": "KLMBG2JETDB041"
+    }},
+    "BMC Name": "AST2500",
+    "IsTransferUsingScp": true,
+    "getBmcSensorDeviceJSONObject": {
+      "FAN8_2_Speed @ BMC_TACH15": {
+        "Signal": "FAN8_2_Speed",
+        "[BMC_TACH15]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH15"
+      },
+      "S1_0V8_VDDC_SOC @ BMC ADC0": {
+        "Signal": "S1_0V8_VDDC_SOC",
+        "Lower Limit (*)": 750,
+        "Upper Limit (*)": 840,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC0"
+      },
+      "S0_2V5_VPP4567 @ BMC ADC7": {
+        "Signal": "S0_2V5_VPP4567",
+        "[BMC ADC7]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 2376,
+        "Upper Limit (*)": 2604,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC7"
+      },
+      "FAN8_1_Speed @ BMC_TACH14": {
+        "Signal": "FAN8_1_Speed",
+        "[BMC_TACH14]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH14"
+      },
+      "FAN4_2_Speed @ BMC_TACH7": {
+        "Signal": "FAN4_2_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH7",
+        "[BMC_TACH7]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest"
+      },
+      "S0_1V8_VDDH @ BMC ADC9": {
+        "Signal": "S0_1V8_VDDH",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC9]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC9"
+      },
+      "FAN6_2_Speed @ BMC_TACH11": {
+        "Signal": "FAN6_2_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC_TACH11]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Name": "BMC_TACH11"
+      },
+      "S1_0V85_RCA @ BMC ADC8": {
+        "Signal": "S1_0V85_RCA",
+        "Lower Limit (*)": 810,
+        "Upper Limit (*)": 1010,
+        "isSelected": true,
+        "[BMC ADC8]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Tolerance": 5,
+        "Name": "BMC ADC8"
+      },
+      "FAN3_1_Speed @ BMC_TACH4": {
+        "Signal": "FAN3_1_Speed",
+        "[BMC_TACH4]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH4"
+      },
+      "S1_0V6_VTT4567 @ BMC ADC6": {
+        "Signal": "S1_0V6_VTT4567",
+        "Lower Limit (*)": 573,
+        "Upper Limit (*)": 627,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC6]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC6"
+      },
+      "S0_1V8_SOC @ BMC ADC11": {
+        "Signal": "S0_1V8_SOC",
+        "[BMC ADC11]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC11"
+      },
+      "S1_1V8_PCP @ BMC ADC12": {
+        "Signal": "S1_1V8_PCP",
+        "[BMC ADC12]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC12"
+      },
+      "S0_2V5_VPP0123 @ BMC ADC4": {
+        "Signal": "S0_2V5_VPP0123",
+        "Lower Limit (*)": 2376,
+        "Upper Limit (*)": 2604,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC4]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC4"
+      },
+      "FAN5_1_Speed @ BMC_TACH8": {
+        "Signal": "FAN5_1_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC_TACH8]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Name": "BMC_TACH8"
+      },
+      "S1_0V75_PCP @ BMC ADC1": {
+        "Signal": "S1_0V75_PCP",
+        "Lower Limit (*)": 710,
+        "Upper Limit (*)": 1100,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC1",
+        "[BMC ADC1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest"
+      },
+      "FAN3_2_Speed @ BMC_TACH5": {
+        "[BMC_TACH5]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Signal": "FAN3_2_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH5"
+      },
+      "FAN6_1_Speed @ BMC_TACH10": {
+        "Signal": "FAN6_1_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH10",
+        "[BMC_TACH10]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest"
+      },
+      "S0_0V6_VTT0123 @ BMC ADC3": {
+        "Signal": "S0_0V6_VTT0123",
+        "Lower Limit (*)": 573,
+        "Upper Limit (*)": 627,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC3]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC3"
+      },
+      "S1_1V2_VDDQ0123 @ BMC ADC2": {
+        "Signal": "S1_1V2_VDDQ0123",
+        "Lower Limit (*)": 1146,
+        "Upper Limit (*)": 1254,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC2]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC2"
+      },
+      "S1_1V5_VDDH @ BMC ADC10": {
+        "Signal": "S1_1V5_VDDH",
+        "[BMC ADC10]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1424,
+        "Upper Limit (*)": 1560,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC10"
+      },
+      "S1_1V2_VDDQ4567 @ BMC ADC5": {
+        "Signal": "S1_1V2_VDDQ4567",
+        "Lower Limit (*)": 1146,
+        "Upper Limit (*)": 1254,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC5]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC5"
+      },
+      "S0_1V2_VDDQ0123 @ BMC ADC2": {
+        "Signal": "S0_1V2_VDDQ0123",
+        "Lower Limit (*)": 1146,
+        "Upper Limit (*)": 1254,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC2]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC2"
+      },
+      "S0_0V85_RCA @ BMC ADC8": {
+        "Signal": "S0_0V85_RCA",
+        "Lower Limit (*)": 810,
+        "Upper Limit (*)": 1010,
+        "isSelected": true,
+        "[BMC ADC8]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Tolerance": 5,
+        "Name": "BMC ADC8"
+      },
+      "S1_2V5_VPP4567 @ BMC ADC7": {
+        "Signal": "S1_2V5_VPP4567",
+        "[BMC ADC7]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 2376,
+        "Upper Limit (*)": 2604,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC7"
+      },
+      "S1_1V8_VDDH @ BMC ADC9": {
+        "Signal": "S1_1V8_VDDH",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC9]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC9"
+      },
+      "S0_1V8_PCP @ BMC ADC12": {
+        "Signal": "S0_1V8_PCP",
+        "[BMC ADC12]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC12"
+      },
+      "FAN7_1_Speed @ BMC_TACH12": {
+        "Signal": "FAN7_1_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC_TACH12]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Name": "BMC_TACH12"
+      },
+      "FAN4_1_Speed @ BMC_TACH6": {
+        "[BMC_TACH6]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Signal": "FAN4_1_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH6"
+      },
+      "S1_1V8_SOC @ BMC ADC11": {
+        "Signal": "S1_1V8_SOC",
+        "[BMC ADC11]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1719,
+        "Upper Limit (*)": 1881,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC11"
+      },
+      "S1_3V3_SOC @ BMC ADC13": {
+        "[BMC ADC13]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Signal": "S1_3V3_SOC",
+        "Lower Limit (*)": 3136,
+        "Upper Limit (*)": 3440,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC13"
+      },
+      "FAN5_2_Speed @ BMC_TACH9": {
+        "Signal": "FAN5_2_Speed",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC_TACH9]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Name": "BMC_TACH9"
+      },
+      "FAN7_2_Speed @ BMC_TACH13": {
+        "Signal": "FAN7_2_Speed",
+        "[BMC_TACH13]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcTachoDeviceTest",
+        "Lower Limit (*)": 2200,
+        "Upper Limit (*)": 24000,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC_TACH13"
+      },
+      "S1_2V5_VPP0123 @ BMC ADC4": {
+        "Signal": "S1_2V5_VPP0123",
+        "Lower Limit (*)": 2376,
+        "Upper Limit (*)": 2604,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC4]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC4"
+      },
+      "S0_1V2_VDDQ4567 @ BMC ADC5": {
+        "Signal": "S0_1V2_VDDQ4567",
+        "Lower Limit (*)": 1146,
+        "Upper Limit (*)": 1254,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC5]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC5"
+      },
+      "S0_0V6_VTT4567 @ BMC ADC6": {
+        "Signal": "S0_0V6_VTT4567",
+        "Lower Limit (*)": 573,
+        "Upper Limit (*)": 627,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC6]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC6"
+      },
+      "S0_1V5_VDDH @ BMC ADC10": {
+        "Signal": "S0_1V5_VDDH",
+        "[BMC ADC10]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 1424,
+        "Upper Limit (*)": 1560,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC10"
+      },
+      "S0_0V8_VDDC_SOC @ BMC ADC0": {
+        "Signal": "S0_0V8_VDDC_SOC",
+        "Lower Limit (*)": 750,
+        "Upper Limit (*)": 840,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC0"
+      },
+      "S1_0V6_VTT0123 @ BMC ADC3": {
+        "Signal": "S1_0V6_VTT0123",
+        "Lower Limit (*)": 573,
+        "Upper Limit (*)": 627,
+        "isSelected": true,
+        "Tolerance": 5,
+        "[BMC ADC3]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Name": "BMC ADC3"
+      },
+      "S0_3V3_SOC @ BMC ADC13": {
+        "[BMC ADC13]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Signal": "S0_3V3_SOC",
+        "Lower Limit (*)": 3136,
+        "Upper Limit (*)": 3440,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC13"
+      },
+      "3V3_SB @ BMC ADC14": {
+        "Signal": "3V3_SB",
+        "[BMC ADC14]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Lower Limit (*)": 3136,
+        "Upper Limit (*)": 3440,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC14"
+      },
+      "VBAT_RTC @ BMC ADC15": {
+        "[BMC ADC15]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest",
+        "Signal": "VBAT_RTC",
+        "Lower Limit (*)": 2368,
+        "Upper Limit (*)": 3440,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC15"
+      },
+      "S0_0V75_PCP @ BMC ADC1": {
+        "Signal": "S0_0V75_PCP",
+        "Lower Limit (*)": 710,
+        "Upper Limit (*)": 1100,
+        "isSelected": true,
+        "Tolerance": 5,
+        "Name": "BMC ADC1",
+        "[BMC ADC1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.sensor.BmcAdcDeviceTest"
+      }
+    },
+    "IsOpenBmc": false,
+    "getBmcEthernetDeviceJSONObject": {"BMC Ethernet": {
+      "User Name (*)": "Admin",
+      "[BMC Ethernet]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.ethernet.BmcEthernetDeviceTest",
+      "isSelected": true,
+      "IP Server (*)": {
+        "Object Identifier": "IPv4Value",
+        "IP Address": "0.0.0.0"
+      },
+      "Password (*)": "Admin",
+      "Name": "BMC Ethernet"
+    }},
+    "getBmcUsbDeviceJSONObject": {
+      "BMC Virtual USB ff31  480 Mbits/sec Port 1": {
+        "USB ProductID": "ff31",
+        "USB Bus": 1,
+        "USB Device_Class": "Virtual USB",
+        "isSelected": true,
+        "[BMC Virtual USB ff31]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.usb.UsbVirtualBmcDeviceTest",
+        "USB VendorID": "046b",
+        "USB Speed": "USB_20",
+        "Name": "BMC Virtual USB ff31"
+      },
+      "BMC Virtual USB ffb0  480 Mbits/sec Port 1": {
+        "USB ProductID": "ffb0",
+        "USB Bus": 1,
+        "[BMC Virtual USB ffb0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.usb.UsbVirtualBmcDeviceTest",
+        "USB Device_Class": "Virtual USB",
+        "isSelected": true,
+        "USB VendorID": "046b",
+        "USB Speed": "USB_20",
+        "Name": "BMC Virtual USB ffb0"
+      },
+      "BMC Virtual USB ff10  480 Mbits/sec Port 1": {
+        "USB ProductID": "ff10",
+        "USB Bus": 1,
+        "[BMC Virtual USB ff10]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.usb.UsbVirtualBmcDeviceTest",
+        "USB Device_Class": "Virtual USB",
+        "isSelected": true,
+        "USB VendorID": "046b",
+        "USB Speed": "USB_20",
+        "Name": "BMC Virtual USB ff10"
+      },
+      "BMC Virtual USB ff20  480 Mbits/sec Port 1": {
+        "USB ProductID": "ff20",
+        "USB Bus": 1,
+        "[BMC Virtual USB ff20]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.usb.UsbVirtualBmcDeviceTest",
+        "USB Device_Class": "Virtual USB",
+        "isSelected": true,
+        "USB VendorID": "046b",
+        "USB Speed": "USB_20",
+        "Name": "BMC Virtual USB ff20"
+      },
+      "BMC Virtual USB ff01  480 Mbits/sec Port 1": {
+        "USB ProductID": "ff01",
+        "USB Bus": 1,
+        "USB Device_Class": "Virtual USB",
+        "isSelected": true,
+        "[BMC Virtual USB ff01]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.usb.UsbVirtualBmcDeviceTest",
+        "USB VendorID": "046b",
+        "USB Speed": "USB_20",
+        "Name": "BMC Virtual USB ff01"
+      }
+    },
+    "getBmcDdrDeviceJSONObject": {"BMC DIMM, Speed: 1600, MCU: 1": {
+      "DDR Speed": "DDR_SPEED_1600",
+      "DDR MCU": 1,
+      "isSelected": true,
+      "[BMC DIMM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.ddr.BmcDimmDeviceTest",
+      "Name": "BMC DIMM"
+    }}
+  },
+  "I2CDeviceList": {
+    "S0 SPD7.1, I2C2, Address: 0x57": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 87,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD7.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 7,
+      "Name": "S0 SPD7.1"
+    },
+    "TCA6424ARGJR, I2C8, Address: 0x22": {
+      "I2C Speed": 100000,
+      "I2C Bus": 8,
+      "I2C Address": 34,
+      "isSelected": true,
+      "[TCA6424ARGJR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TCA6424ARGJRI2cDeviceTest",
+      "Name": "TCA6424ARGJR"
+    },
+    "S0 SPD6.0, I2C2, Address: 0x54": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 84,
+      "[S0 SPD6.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 0,
+      "MCU": 6,
+      "Name": "S0 SPD6.0"
+    },
+    "S0 SPD1.0, I2C10, Address: 0x52": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 82,
+      "isSelected": true,
+      "Slot": 0,
+      "[S0 SPD1.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 1,
+      "Name": "S0 SPD1.0"
+    },
+    "S1 SPD1.1, I2C10, Address: 0x53": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 83,
+      "isSelected": true,
+      "Slot": 1,
+      "[S1 SPD1.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 1,
+      "Name": "S1 SPD1.1"
+    },
+    "PCA9545APW, I2C8, Address: 0x70": {
+      "I2C Speed": 100000,
+      "I2C Bus": 8,
+      "I2C Address": 112,
+      "isSelected": true,
+      "Name": "PCA9545APW"
+    },
+    "S1 SPD3.0, I2C10, Address: 0x56": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 86,
+      "isSelected": true,
+      "Slot": 0,
+      "[S1 SPD3.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 3,
+      "Name": "S1 SPD3.0"
+    },
+    "PCA9545APW, I2C8, Address: 0x72": {
+      "I2C Speed": 100000,
+      "I2C Bus": 8,
+      "I2C Address": 114,
+      "isSelected": true,
+      "Name": "PCA9545APW"
+    },
+    "S1 SPD5.1, I2C2, Address: 0x53": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 83,
+      "[S1 SPD5.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 1,
+      "MCU": 5,
+      "Name": "S1 SPD5.1"
+    },
+    "S0 XDPE12284C, I2C0, Address: 0x68": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 104,
+      "Min Value (*)": 1146,
+      "isSelected": true,
+      "[S0 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Domain": 1,
+      "Max Value (*)": 1254,
+      "Socket": 0,
+      "Name": "S0 XDPE12284C"
+    },
+    "S0 XDPE12254A, I2C0, Address: 0x58": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 88,
+      "Min Value (*)": 750,
+      "[S0 XDPE12254A]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12254AI2cDeviceTest",
+      "isSelected": true,
+      "Domain": 0,
+      "Max Value (*)": 840,
+      "Socket": 0,
+      "Name": "S0 XDPE12254A"
+    },
+    "S0 SPD1.1, I2C10, Address: 0x53": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 83,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD1.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 1,
+      "Name": "S0 SPD1.1"
+    },
+    "S1 SPD4.0, I2C2, Address: 0x50": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 80,
+      "isSelected": true,
+      "Slot": 0,
+      "[S1 SPD4.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 4,
+      "Name": "S1 SPD4.0"
+    },
+    "S0 XDPE12284C, I2C0, Address: 0x60": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 96,
+      "Min Value (*)": 710,
+      "isSelected": true,
+      "[S0 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Domain": 3,
+      "Max Value (*)": 1200,
+      "Socket": 0,
+      "Name": "S0 XDPE12284C"
+    },
+    "S1 SPD3.1, I2C10, Address: 0x57": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 87,
+      "isSelected": true,
+      "Slot": 1,
+      "[S1 SPD3.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 3,
+      "Name": "S1 SPD3.1"
+    },
+    "S0 SPD2.1, I2C10, Address: 0x55": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 85,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD2.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 2,
+      "Name": "S0 SPD2.1"
+    },
+    "S1 SPD0.0, I2C10, Address: 0x50": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 80,
+      "[S1 SPD0.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 1,
+      "MCU": 0,
+      "Name": "S1 SPD0.0"
+    },
+    "S0 SPD6.1, I2C2, Address: 0x55": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 85,
+      "[S0 SPD6.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 0,
+      "MCU": 6,
+      "Name": "S0 SPD6.1"
+    },
+    "S0 SPD5.0, I2C2, Address: 0x52": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 82,
+      "[S0 SPD5.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 0,
+      "MCU": 5,
+      "Name": "S0 SPD5.0"
+    },
+    "S1 XDPE12254A, I2C0, Address: 0x58": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 88,
+      "Min Value (*)": 750,
+      "[S1 XDPE12254A]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12254AI2cDeviceTest",
+      "isSelected": true,
+      "Domain": 0,
+      "Max Value (*)": 840,
+      "Socket": 1,
+      "Name": "S1 XDPE12254A"
+    },
+    "Main EEPROM, I2C1, Address: 0x53": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-high",
+      "I2C Bus": 1,
+      "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+      "I2C Address": 83,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Main EEPROM"
+    },
+    "S1 XDPE12284C, I2C0, Address: 0x60": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 96,
+      "Min Value (*)": 710,
+      "isSelected": true,
+      "Domain": 3,
+      "Max Value (*)": 1200,
+      "[S1 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Socket": 1,
+      "Name": "S1 XDPE12284C"
+    },
+    "Main EEPROM, I2C1, Address: 0x51": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-high",
+      "I2C Bus": 1,
+      "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+      "I2C Address": 81,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Main EEPROM"
+    },
+    "Main EEPROM, I2C1, Address: 0x52": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-high",
+      "I2C Bus": 1,
+      "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+      "I2C Address": 82,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Main EEPROM"
+    },
+    "Main EEPROM, I2C1, Address: 0x50": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-high",
+      "I2C Bus": 1,
+      "[Main EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest",
+      "I2C Address": 80,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Main EEPROM"
+    },
+    "S1 SPD7.0, I2C2, Address: 0x56": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 86,
+      "[S1 SPD7.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 1,
+      "MCU": 7,
+      "Name": "S1 SPD7.0"
+    },
+    "S1 SPD0.1, I2C10, Address: 0x51": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 81,
+      "isSelected": true,
+      "Slot": 1,
+      "[S1 SPD0.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 0,
+      "Name": "S1 SPD0.1"
+    },
+    "S1 SPD4.1, I2C2, Address: 0x51": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 81,
+      "isSelected": true,
+      "Slot": 1,
+      "[S1 SPD4.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 4,
+      "Name": "S1 SPD4.1"
+    },
+    "S1 XDPE12284C, I2C0, Address: 0x68": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 104,
+      "Min Value (*)": 1146,
+      "isSelected": true,
+      "Domain": 1,
+      "Max Value (*)": 1254,
+      "[S1 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Socket": 1,
+      "Name": "S1 XDPE12284C"
+    },
+    "S1 SPD2.0, I2C10, Address: 0x54": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 84,
+      "isSelected": true,
+      "Slot": 0,
+      "[S1 SPD2.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 2,
+      "Name": "S1 SPD2.0"
+    },
+    "TPS53915RVET, I2C0, Address: 0x1e": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 30,
+      "isSelected": true,
+      "Name": "TPS53915RVET"
+    },
+    "TPS53915RVET, I2C0, Address: 0x1d": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 29,
+      "isSelected": true,
+      "Name": "TPS53915RVET"
+    },
+    "S0 SPD5.1, I2C2, Address: 0x53": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 83,
+      "[S0 SPD5.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 0,
+      "MCU": 5,
+      "Name": "S0 SPD5.1"
+    },
+    "TPS53915RVET, I2C0, Address: 0x1c": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 28,
+      "isSelected": true,
+      "Name": "TPS53915RVET"
+    },
+    "S1 XDPE12284C, I2C0, Address: 0x6a": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 106,
+      "Min Value (*)": 1146,
+      "isSelected": true,
+      "Domain": 2,
+      "Max Value (*)": 1254,
+      "[S1 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Socket": 1,
+      "Name": "S1 XDPE12284C"
+    },
+    "TPS53915RVET, I2C0, Address: 0x1b": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 27,
+      "isSelected": true,
+      "Name": "TPS53915RVET"
+    },
+    "S0 SPD0.1, I2C10, Address: 0x51": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 81,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD0.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 0,
+      "Name": "S0 SPD0.1"
+    },
+    "S0 SPD4.0, I2C2, Address: 0x50": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 80,
+      "isSelected": true,
+      "Slot": 0,
+      "[S0 SPD4.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 4,
+      "Name": "S0 SPD4.0"
+    },
+    "S1 SPD2.1, I2C10, Address: 0x55": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 85,
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 1,
+      "MCU": 2,
+      "Name": "S1 SPD2.1",
+      "[S1 SPD2.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest"
+    },
+    "S0 SPD2.0, I2C10, Address: 0x54": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 84,
+      "isSelected": true,
+      "Slot": 0,
+      "[S0 SPD2.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 2,
+      "Name": "S0 SPD2.0"
+    },
+    "S1 SPD7.1, I2C2, Address: 0x57": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 87,
+      "[S1 SPD7.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 1,
+      "MCU": 7,
+      "Name": "S1 SPD7.1"
+    },
+    "S1 SPD6.0, I2C2, Address: 0x54": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 84,
+      "[S1 SPD6.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 1,
+      "MCU": 6,
+      "Name": "S1 SPD6.0"
+    },
+    "Failover EEPROM, I2C1, Address: 0x51": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-low",
+      "I2C Bus": 1,
+      "I2C Address": 81,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Failover EEPROM",
+      "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+    },
+    "S0 SPD3.0, I2C10, Address: 0x56": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 86,
+      "isSelected": true,
+      "Slot": 0,
+      "[S0 SPD3.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 3,
+      "Name": "S0 SPD3.0"
+    },
+    "Failover EEPROM, I2C1, Address: 0x50": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-low",
+      "I2C Bus": 1,
+      "I2C Address": 80,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Failover EEPROM",
+      "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+    },
+    "Failover EEPROM, I2C1, Address: 0x53": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-low",
+      "I2C Bus": 1,
+      "I2C Address": 83,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Failover EEPROM",
+      "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+    },
+    "Failover EEPROM, I2C1, Address: 0x52": {
+      "I2C Speed": 100000,
+      "S0 BMC Pre Cmd 0": "gpiotool 8 --set-data-low",
+      "I2C Bus": 1,
+      "I2C Address": 82,
+      "isSelected": true,
+      "S0 BMC Post Cmd 0": "gpiotool 8 --set-data-high",
+      "Name": "Failover EEPROM",
+      "[Failover EEPROM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.AT24CM02I2cDeviceTest"
+    },
+    "PCF85063ATAY, I2C6, Address: 0x51": {
+      "I2C Speed": 100000,
+      "I2C Bus": 6,
+      "I2C Address": 81,
+      "[PCF85063ATAY]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.PCF85063ATAYI2cDeviceTest",
+      "isSelected": true,
+      "Name": "PCF85063ATAY"
+    },
+    "TCA9534PWR, I2C8, Address: 0x20": {
+      "I2C Speed": 100000,
+      "I2C Bus": 8,
+      "I2C Address": 32,
+      "isSelected": true,
+      "[TCA9534PWR]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.TCA9534PWRI2cDeviceTest",
+      "Name": "TCA9534PWR"
+    },
+    "S0 SPD7.0, I2C2, Address: 0x56": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 86,
+      "[S0 SPD7.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 0,
+      "MCU": 7,
+      "Name": "S0 SPD7.0"
+    },
+    "S0 SPD4.1, I2C2, Address: 0x51": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 81,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD4.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 4,
+      "Name": "S0 SPD4.1"
+    },
+    "S0 XDPE12284C, I2C0, Address: 0x6a": {
+      "I2C Speed": 100000,
+      "I2C Bus": 0,
+      "I2C Address": 106,
+      "Min Value (*)": 1146,
+      "isSelected": true,
+      "[S0 XDPE12284C]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.XDPE12284CI2cDeviceTest",
+      "Domain": 2,
+      "Max Value (*)": 1254,
+      "Socket": 0,
+      "Name": "S0 XDPE12284C"
+    },
+    "S0 SPD3.1, I2C10, Address: 0x57": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 87,
+      "isSelected": true,
+      "Slot": 1,
+      "[S0 SPD3.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 3,
+      "Name": "S0 SPD3.1"
+    },
+    "S1 SPD1.0, I2C10, Address: 0x52": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 82,
+      "isSelected": true,
+      "Slot": 0,
+      "[S1 SPD1.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 1,
+      "MCU": 1,
+      "Name": "S1 SPD1.0"
+    },
+    "S1 SPD6.1, I2C2, Address: 0x55": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 85,
+      "[S1 SPD6.1]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 1,
+      "Socket": 1,
+      "MCU": 6,
+      "Name": "S1 SPD6.1"
+    },
+    "S0 SPD0.0, I2C10, Address: 0x50": {
+      "I2C Speed": 100000,
+      "I2C Bus": 10,
+      "I2C Address": 80,
+      "isSelected": true,
+      "Slot": 0,
+      "[S0 SPD0.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "Socket": 0,
+      "MCU": 0,
+      "Name": "S0 SPD0.0"
+    },
+    "S1 SPD5.0, I2C2, Address: 0x52": {
+      "I2C Speed": 100000,
+      "I2C Bus": 2,
+      "I2C Address": 82,
+      "[S1 SPD5.0]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.i2c.DDR4SpdI2cDeviceTest",
+      "isSelected": true,
+      "Slot": 0,
+      "Socket": 1,
+      "MCU": 5,
+      "Name": "S1 SPD5.0"
+    }
+  },
+  "PCIeDeviceList": {
+    "PCIe Device @ 000C:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "000C:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 000D:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "000D:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0000:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0000:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0002:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0002:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0002:00:05.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0002:00:05.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0004:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0004:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0004:00:03.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0004:00:03.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0004:00:05.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0004:00:05.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0004:00:07.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0004:00:07.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0005:00:01.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0005:00:01.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0005:00:03.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0005:00:03.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0005:00:05.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0005:00:05.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    },
+    "PCIe Device @ 0005:00:07.0": {
+      "PCIe DeviceID": "FFFF",
+      "PCIe DBDF": "0005:00:07.0",
+      "PCIe VendorID": "FFFF",
+      "isSelected": true,
+      "[PCIe Device]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.pcie.DiagnosticPcieQSDeviceTest",
+      "Loop (*)": 1,
+      "Name": "PCIe Device"
+    }
+  },
+  "DDRDeviceList": {"DIMM, Speed: 3200, MCU: 8": {
+    "DDR Speed": "DDR_SPEED_3200",
+    "DDR MCU": 8,
+    "isSelected": true,
+    "Loop (*)": 1,
+    "[DIMM]diagnosticTestClassName": "com.amperecomputing.testpanel.diagnostic.ddr.DimmDeviceTest",
+    "Name": "DIMM"
+  }},
+  "UARTDeviceList": {
+    "UART4, Baudrate 115200, Bus 4": {
+      "Uart Bus": 4,
+      "isSelected": true,
+      "Uart baudrate": 115200,
+      "Name": "UART4"
+    },
+    "UART0, Baudrate 115200, Bus 0": {
+      "Uart Bus": 0,
+      "isSelected": true,
+      "Uart baudrate": 115200,
+      "Name": "UART0"
+    },
+    "UART1, Baudrate 115200, Bus 1": {
+      "Uart Bus": 1,
+      "isSelected": true,
+      "Uart baudrate": 115200,
+      "Name": "UART1"
+    }
+  }
+}
