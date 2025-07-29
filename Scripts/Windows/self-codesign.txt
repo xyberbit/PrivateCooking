@@ -77,7 +77,13 @@ $codeSignCert = New-SelfSignedCertificate `
 
 $mypwd = ConvertTo-SecureString -String "pass1234" -Force -AsPlainText
 
-Export-PfxCertificate -Cert $codeSignCert -FilePath <cert.pfx> -Password $mypwd
+Export-PfxCertificate -Cert $codeSignCert -FilePath <.pfx> -Password $mypwd
 
-signtool sign /f <cert.pfx> /p pass1234 /fd SHA256 <signing file>
+signtool sign /f <.pfx> /p pass1234 /fd SHA256 <signing file>
 
+
+INSTALL / UNINSTALL
+===================
+
+pnputil /add-driver <.inf> /install
+pnputil /delete-driver <oem*.inf> /uninstall
