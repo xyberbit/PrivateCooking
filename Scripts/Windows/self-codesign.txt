@@ -40,7 +40,7 @@ $rootCaCert = New-SelfSignedCertificate `
     -KeyExportPolicy "Exportable" `
     -KeyUsageProperty "All" `
     -KeyUsage @("CertSign", "CrlSign") `
-    -Subject "Self-Signed Root CA" `
+    -Subject "Open Root CA" `
     -CertStoreLocation cert:\LocalMachine\My `
     -NotAfter ([DateTime]::Now.AddYears(20)) `
     -Provider "Microsoft Software Key Storage Provider" `
@@ -52,7 +52,7 @@ $subCaCert = New-SelfSignedCertificate `
     -KeyExportPolicy "Exportable" `
     -KeyUsageProperty "All" `
     -KeyUsage @("CertSign", "CrlSign") `
-    -Subject "Self-Signed Sub CA" `
+    -Subject "Open Sub CA" `
     -CertStoreLocation cert:\LocalMachine\My `
     -NotAfter ([DateTime]::Now.AddYears(10)) `
     -Provider "Microsoft Software Key Storage Provider" `
