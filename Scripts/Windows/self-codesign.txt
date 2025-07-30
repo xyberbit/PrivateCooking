@@ -1,5 +1,5 @@
-SYSTEM NULL DRIVER INF
-======================
+NULL DRIVER INF
+===============
 https://learn.microsoft.com/en-us/windows-hardware/drivers/install/inf-version-section
 https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk (inf2cat)
 
@@ -30,10 +30,16 @@ DeviceDesc   = "ACPI PCI Hot Plug Ampere Altra Extension"
 inf2cat /driver:<inf directory> /os:10_NI_ARM64 
 
 
-SELF SIGNING POWERSHELL (admin privilege)
-=========================================
+SELF SIGNING
+============
 https://stackoverflow.com/questions/68752743/i-cant-i-use-my-code-certificate-to-sign-my-exe-file-eku-filter
 https://github.com/Delphier/SignTool (signtool)
+
+-Signer can be omitted if chain is not required.
+-Start from $ku_codeSigning is fine for self signing.
+
+Powershell with admin privilege
+-------------------------------
 
 $rootCaCert = New-SelfSignedCertificate `
     -Type "Custom" `
@@ -65,7 +71,7 @@ $ku_codeSigning = "1.3.6.1.5.5.7.3.3";
 $codeSignCert = New-SelfSignedCertificate `
     -Type "CodeSigningCert" `
     -KeyExportPolicy "Exportable" `
-    -Subject "..." `
+    -Subject "Self Signed CA" `
     -KeyUsageProperty @("Sign") `
     -KeyUsage @("DigitalSignature") `
     -TextExtension @("2.5.29.37={text}$($ku_codeSigning)", "2.5.29.19={text}false") `
@@ -76,9 +82,7 @@ $codeSignCert = New-SelfSignedCertificate `
     -Signer $subCaCert;
 
 $mypwd = ConvertTo-SecureString -String "pass1234" -Force -AsPlainText
-
 Export-PfxCertificate -Cert $codeSignCert -FilePath <.pfx> -Password $mypwd
-
 signtool sign /f <.pfx> /p pass1234 /fd SHA256 <signing file>
 
 
